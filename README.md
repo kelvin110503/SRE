@@ -1,5 +1,11 @@
 # Campus Accessibility Navigation System with Facilities and Event Integration
+## 🚀 Getting Started
 
+To clone this repository to your local machine, run the following command in your terminal:
+
+```
+git clone https://github.com/kelvin110503/SRE.git
+```
 ## 👥 Team Members
 - Chia Kok Ang (242UC24423)
 - Wang Kuang Wei (242UC2451W)
