@@ -593,6 +593,20 @@ Through web browsers and mobile apps, MMUAccess will work on a variety of system
 - IEEE 830-1998 Standard for SRS Structure
 - Comments on accessibility from student questionnaires and interviews that were done during the elicitation stage
 
+### 3.8.2 Requirements Traceability Matrix
+
+#### Requirements Traceability Matrix
+
+| Requirement ID | Use Case ID | System Feature               | Stakeholder       | Notes                        |
+|----------------|-------------|------------------------------|-------------------|------------------------------|
+| REQ_F001       | UC001       | User Registration/Login      | User              | Original SRS                 |
+| REQ_F002       | UC002       | View Campus Events           | User              | Original SRS                 |
+| REQ_F003       | UC002       | Display Event Details        | User              | Original SRS                 |
+| REQ_F004       | UC002       | Event Filtering              | User              | Original SRS                 |
+| REQ_F005       | UC003       | Accessible Route Guidance    | User              | Original SRS                 |
+| REQ_F006       | UC002       | No Events Message            | User              | Original SRS                 |
+| REQ_F007       | UC007       | Obstacle Reporting           | User, Admin       | (To be added if needed)      |
+
 # 4.0 Verification
 
 **4.0 Verification**

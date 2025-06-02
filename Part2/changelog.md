@@ -5,6 +5,11 @@ Change Description:
 Reason: 
 
 Author: Sim Boon Xun <wen_xun2002@hotmail.com>
+Date:   Mon Jun 2 23:35:00 2025 +0800
+Change Description: Added initial Requirements Traceability Matrix table to the Supporting Information section in SRS.md.
+Reason: To enable systematic mapping of functional requirements to corresponding use cases and features, ensuring full traceability and compliance with SRS standards.
+
+Author: Sim Boon Xun <wen_xun2002@hotmail.com>
 Date:   Mon Jun 2 19:38:00 2025 +0800
 Change Description: Refactor 3.1 Functions section, added requirement IDs, detailed fields, and acceptance criteria. Added Source for each requirement.
 Reason: To standardize requirements section for traceability and meet SRS best practices.
