@@ -5,6 +5,16 @@ Change Description:
 Reason: 
 
 Author: Sim Boon Xun <wen_xun2002@hotmail.com>
+Date:   Mon Jun 2 19:38:00 2025 +0800
+Change Description: Refactor 3.1 Functions section, added requirement IDs, detailed fields, and acceptance criteria. Added Source for each requirement.
+Reason: To standardize requirements section for traceability and meet SRS best practices.
+
+Author: Sim Boon Xun <wen_xun2002@hotmail.com>
+Date:   Fri May 30 10:09:34 2025 +0800
+Change Description: format changelog 
+Reason:formating changelog, makesure teamember folo the format to update changelog
+
+Author: Sim Boon Xun <wen_xun2002@hotmail.com>
 Date:   Fri May 30 09:56:28 2025 +0800
 Change Description: upload G1 SRS.md and SRS.docx file 
 Reason: Upload Group 1 SRS documentation

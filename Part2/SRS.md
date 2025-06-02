@@ -144,35 +144,65 @@ AI-generated content may be incorrect.](data:image/png;base64,iVBORw0KGgoAAAANSU
 
 #### Figure 1.0 Use Case Diagram – Navigation System
 
-| **Requirement ID** | REQ_F001 | **Version** | 1.0 |
-| --- | --- | --- | --- |
-| **Description** | System shall allow users to register for an account or log in using valid credentials. |     |     |
-| **Author** | Naqib |     |     |
+#### REQ_F001: User Registration and Login
 
-| **Requirement ID** | REQ_F002 | **Version** | 1.0 |
-| --- | --- | --- | --- |
-| **Description** | System shall allow user to access and view a list of current events |     |     |
-| **Author** | Naqib |     |     |
+- **Version**: 1.0
+- **Description**: The system shall allow users to register for an account or log in using valid credentials.
+- **Priority**: High
+- **Acceptance Criteria**: User can successfully register or login; invalid credentials show error.
+- **Author**: Naqib
 
-| **Requirement ID** | REQ_F003 | **Version** | 1.0 |
-| --- | --- | --- | --- |
-| **Description** | System shall display event name, location, time, and accessibility info |     |     |
-| **Author** | Naqib |     |     |
+---
 
-| **Requirement ID** | REQ_F004 | **Version** | 1.0 |
-| --- | --- | --- | --- |
-| **Description** | System shall allow users to filter events based on date and category |     |     |
-| **Author** | Naqib |     |     |
+#### REQ_F002: View Campus Events
 
-| **Requirement ID** | REQ_F005 | **Version** | 1.0 |
-| --- | --- | --- | --- |
-| **Description** | System shall allow users to get accessible route guidance to event locations. |     |     |
-| **Author** | Naqib |     |     |
+- **Version**: 1.0
+- **Description**: The system shall allow users to access and view a list of current campus events.
+- **Priority**: High
+- **Acceptance Criteria**: User can see a list of events, including event name, date, time, and location.
+- **Author**: Naqib
 
-| **Requirement ID** | REQ_F006 | **Version** | 1.0 |
-| --- | --- | --- | --- |
-| **Description** | System shall display a message if no upcoming events are available |     |     |
-| **Author** | Naqib |     |     |
+---
+
+#### REQ_F003: Display Event Details
+
+- **Version**: 1.0
+- **Description**: The system shall display event name, location, time, and accessibility information.
+- **Priority**: Medium
+- **Acceptance Criteria**: When user clicks on an event, detailed information is shown.
+- **Author**: Naqib
+
+---
+
+#### REQ_F004: Event Filtering
+
+- **Version**: 1.0
+- **Description**: The system shall allow users to filter events based on date and category.
+- **Priority**: Medium
+- **Acceptance Criteria**: User can filter events and view only relevant results.
+- **Author**: Naqib
+
+---
+
+#### REQ_F005: Accessible Route Guidance
+
+- **Version**: 1.0
+- **Description**: The system shall allow users to get accessible route guidance to event locations.
+- **Priority**: High
+- **Acceptance Criteria**: When user selects "Get Route", an accessible path is shown from user's current location to the event.
+- **Author**: Naqib
+
+---
+
+#### REQ_F006: No Events Message
+
+- **Version**: 1.0
+- **Description**: The system shall display a message if no upcoming events are available.
+- **Priority**: Low
+- **Acceptance Criteria**: If the event list is empty, a clear message is shown to the user.
+- **Author**: Naqib
+
+---
 
 1<sup>st</sup> use case
 
