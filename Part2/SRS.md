@@ -378,13 +378,55 @@ AI-generated content may be incorrect.](data:image/png;base64,iVBORw0KGgoAAAANSU
 
 ## 3.2 Performance Requirements
 
-| **Requirement ID** | **Description** | **Priority** | **Author** |
-| --- | --- | --- | --- |
-| REQ_P001 | The system shall display event and route results within 3 **seconds** of request. | High | Naqib |
+#### REQ_P001: Response Time
 
-| **Requirement ID** | **Description** | **Priority** | **Author** |
-| --- | --- | --- | --- |
-| REQ_P002 | The system shall support **up to 500 concurrent users** (web and mobile) without performance lag | High | Naqib |
+- **Version**: 1.0
+- **Description**: The system shall display event and route search results within 3 seconds of user request under normal load.
+- **Priority**: High
+- **Acceptance Criteria**: 95% of user requests are completed within 3 seconds during standard operation.
+- **Author**: Naqib
+
+---
+
+#### REQ_P002: Concurrent Users
+
+- **Version**: 1.0
+- **Description**: The system shall support at least 500 concurrent users (web and mobile) without noticeable performance degradation.
+- **Priority**: High
+- **Acceptance Criteria**: System performance (response time, error rate) remains within acceptable limits with 500 active sessions.
+- **Author**: Naqib
+
+---
+
+#### REQ_P003: System Availability
+
+- **Version**: 1.0
+- **Description**: The system shall maintain an uptime of at least 99.5% during university operating hours, excluding scheduled maintenance.
+- **Priority**: High
+- **Acceptance Criteria**: Monthly uptime report shows ≥99.5% availability.
+- **Author**: Team G2
+
+---
+
+#### REQ_P004: Data Backup & Recovery
+
+- **Version**: 1.0
+- **Description**: The system shall perform automatic daily backups of all critical data and be able to recover within 10 minutes after an unexpected outage.
+- **Priority**: Medium
+- **Acceptance Criteria**: Backup and restore processes are tested monthly; recovery time ≤10 minutes.
+- **Author**: Team G2
+
+---
+
+#### REQ_P005: Scalability
+
+- **Version**: 1.0
+- **Description**: The system shall be able to scale up to 1000 concurrent users within 6 months after initial deployment with minimal downtime.
+- **Priority**: Medium
+- **Acceptance Criteria**: System can be upgraded (e.g., via cloud resources) to meet future growth.
+- **Author**: Team G2
+
+---
 
 ## 3.3 Usability Requirement
 
