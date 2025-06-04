@@ -5,7 +5,12 @@ Change Description:
 Reason: 
 
 Author: Sim Boon Xun <wen_xun2002@hotmail.com>
-Date:   Mon Jun 3 20:12:00 2025 +0800
+Date:   Wed Jun 4 14:00:00 2025 +0800
+Change Description: Refactored 3.3 Usability Requirements section in SRS.md. Added structured requirement IDs, detailed descriptions, priorities, and clear acceptance criteria for intuitive navigation, efficiency, accessibility, user guidance, standards compliance, and user satisfaction.
+Reason: To ensure usability requirements are explicit, testable, and fully aligned with recognized usability and accessibility standards, enabling thorough validation and clear communication to all stakeholders during development and presentation.
+
+Author: Sim Boon Xun <wen_xun2002@hotmail.com>
+Date:   Tue Jun 3 20:12:00 2025 +0800
 Change Description: Refactored 3.2 Performance Requirements section in SRS.md. Added detailed requirement IDs, descriptions, priorities, and acceptance criteria for response time, concurrency, availability, backup, and scalability.
 Reason: To ensure all system performance requirements are explicit, measurable, and comprehensively address the main performance areas expected for a modern campus system—including response time, concurrency, system availability, backup/recovery, and scalability. 
 This level of detail helps both developers and testers to accurately implement and validate performance targets. 
@@ -14,7 +19,7 @@ Aligning with SRS best practices and ISO/IEC/IEEE 29148 not only meets course st
 
 Author: Sim Boon Xun <wen_xun2002@hotmail.com>
 Date:   Mon Jun 2 23:35:00 2025 +0800
-Change Description: Added initial Requirements Traceability Matrix table to the Supporting Information section in SRS.md.
+Change Description: 3.9-Supporting information part --Added initial Requirements Traceability Matrix table to the Supporting Information section in SRS.md.
 Reason: To enable systematic mapping of functional requirements to corresponding use cases and features, ensuring full traceability and compliance with SRS standards.
 
 Author: Sim Boon Xun <wen_xun2002@hotmail.com>

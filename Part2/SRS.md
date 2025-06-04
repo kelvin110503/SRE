@@ -432,12 +432,77 @@ AI-generated content may be incorrect.](data:image/png;base64,iVBORw0KGgoAAAANSU
 
 MMUAccess shall be designed with a strong focus on ease of use and accessibility for all users, including individuals with disabilities.
 
-- The system shall provide a user interface with intuitive navigation and minimal learning curve.
-- Users shall be able to complete core tasks (e.g., searching for accessible routes, viewing event locations) with no more than 3 interactions (clicks/taps).
-- The system shall offer multi-language support, with English and Bahasa Malaysia as defaults.
-- Tooltips, onboarding guidance, and help sections shall be available to assist new users.
-- A high-contrast visual mode and adjustable font sizes shall be included for visually impaired users.
-- System usability shall comply with ISO 9241 and WCAG 2.1 standards, aiming for at least Level AA conformance.
+---
+
+#### REQ_U001: Intuitive Navigation
+
+- **Version**: 1.0
+- **Description**: The system shall provide a user interface with intuitive navigation and minimal learning curve, allowing users to complete core tasks (e.g., searching for accessible routes, viewing events) without requiring a manual.
+- **Priority**: High
+- **Acceptance Criteria**: At least 90% of users can complete key tasks (route search, event view) on their first attempt during usability testing, without external assistance.
+- **Author**: Team G1
+
+---
+
+#### REQ_U002: Task Efficiency
+
+- **Version**: 1.0
+- **Description**: Users shall be able to complete core tasks (such as searching for accessible routes or viewing event locations) with no more than 3 clicks or taps.
+- **Priority**: High
+- **Acceptance Criteria**: Usability tests show that 95% of tasks are completed within 3 clicks/taps.
+- **Author**: Team G1
+
+---
+
+#### REQ_U003: Multi-Language Support
+
+- **Version**: 1.0
+- **Description**: The system shall offer multi-language support, with English and Bahasa Malaysia as default options.
+- **Priority**: Medium
+- **Acceptance Criteria**: All user-facing screens and messages are available in both languages, and language can be switched at any time.
+- **Author**: Team G1
+
+---
+
+#### REQ_U004: User Guidance and Help
+
+- **Version**: 1.0
+- **Description**: The system shall provide tooltips, onboarding guidance, and a help section to assist new users in using core features.
+- **Priority**: Medium
+- **Acceptance Criteria**: Usability testing confirms that users can access and understand help content, and at least 80% rate onboarding as helpful.
+- **Author**: Team G1
+
+---
+
+#### REQ_U005: Accessibility Features
+
+- **Version**: 1.0
+- **Description**: The system shall include a high-contrast visual mode, adjustable font sizes, screen reader compatibility, and keyboard navigation for users with disabilities.
+- **Priority**: High
+- **Acceptance Criteria**: System passes accessibility tests based on WCAG 2.1 Level AA; features function as intended in assistive technology environments.
+- **Author**: Team G1
+
+---
+
+#### REQ_U006: Usability Compliance
+
+- **Version**: 1.0
+- **Description**: System usability shall comply with ISO 9241 and WCAG 2.1 standards, aiming for at least Level AA conformance.
+- **Priority**: High
+- **Acceptance Criteria**: External usability and accessibility audit reports confirm compliance with relevant standards.
+- **Author**: Team G1
+
+---
+
+#### REQ_U007: User Satisfaction
+
+- **Version**: 1.0
+- **Description**: The system shall achieve a System Usability Scale (SUS) score of at least 80 during acceptance testing.
+- **Priority**: Medium
+- **Acceptance Criteria**: Post-test SUS surveys with sample users average 80 or above.
+- **Author**: Team G2
+
+---
 
 ## 3.4 Interface Requirement
 
