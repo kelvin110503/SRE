@@ -5,6 +5,11 @@ Change Description:
 Reason: 
 
 Author: Sim Boon Xun <wen_xun2002@hotmail.com>
+Date:   Mon Jun 3 17:55:00 2025 +0800
+Change Description: Reorganized and enhanced section 3.7 Software System Attributes in SRS.md. Structured each attribute with clear description, rationale, and measurable acceptance criteria. Added new system attributes for Scalability, Interoperability, Auditability, and Localization, expanding on the original SRS content.
+Reason: To make all system attribute requirements explicit, testable, and directly traceable, supporting robust system design, future system evolution, and compliance. This aligns with software engineering best practices and provides clear communication for both documentation and presentation.
+
+Author: Sim Boon Xun <wen_xun2002@hotmail.com>
 Date:   Mon Jun 3 17:30:00 2025 +0800
 Change Description: Refined and expanded 3.6 Design Constraints in SRS.md, adding clear sub-requirements with constraint types, rationales, and measurable acceptance criteria, without removing or altering original SRS content.
 Reason: To clarify and systematize design constraints, facilitate stakeholder understanding, and support effective system development and presentation in line with software engineering best practices.

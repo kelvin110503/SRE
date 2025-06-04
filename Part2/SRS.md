@@ -795,29 +795,71 @@ Design constraints specify limitations on the design or implementation of the sy
 
 ## 3.7 Software System Attributes
 
-### 3.7.1 Availability  
+### 3.7.1 REQ_SA001: Availability  
 
-MMUAccess will be accessible around-the-clock, particularly during school hours. The system will notify users in advance of scheduled maintenance windows.
+- **Description**: MMUAccess shall be accessible 24/7, with planned maintenance windows announced in advance. The system shall maintain at least 99.5% uptime during university operating hours.
+- **Attribute Type**: Availability
+- **Rationale**: Ensures users can reliably access the system, reducing disruptions to campus navigation.
+- **Acceptance Criteria**: Monthly uptime reports confirm ≥99.5% availability (excluding scheduled maintenance).
 
-### 3.7.2 Security  
+### 3.7.2 REQ_SA002: Security  
 
-HTTPS will be used by the system to ensure secure communication. Facility and event data can only be updated by authorised university employees. To stop unwanted changes, user data will be encrypted and access limits will be implemented.
+- **Description**: All communication shall use HTTPS; only authorized university staff may update facility and event data. User data shall be encrypted and access controls enforced.
+- **Attribute Type**: Security
+- **Rationale**: Protects sensitive information, prevents unauthorized access, and ensures compliance with security standards.
+- **Acceptance Criteria**: Security audits reveal no critical vulnerabilities; data is encrypted at rest and in transit.
 
-### 3.7.3 Accessibility  
+### 3.7.3 REQ_SA003: Accessibility  
 
-The system must be usable by people with visual, auditory, and motor disabilities in accordance with WCAG 2.1 (Web Content Accessibility Guidelines). High contrast themes, screen reader compatibility, and keyboard navigation are among the features.
+- **Description**: The system shall comply with WCAG 2.1 Level AA, supporting high contrast themes, screen readers, and keyboard navigation for users with disabilities.
+- **Attribute Type**: Accessibility
+- **Rationale**: Ensures inclusivity and legal compliance for users with varying abilities.
+- **Acceptance Criteria**: Accessibility audits confirm compliance; user testing by individuals with disabilities verifies feature usability.
 
-### 3.7.4 Reliability  
 
-With a goal uptime of 99.5%, the system must run continuously. When connectivity is restored, it should continue services and gracefully handle small data failures or outages.
+### 3.7.4 REQ_SA005: Maintainability  
 
-### 3.7.5 Maintainability  
+- **Description**: The system shall achieve at least 99.5% uptime, and automatically recover from minor failures or outages within 10 minutes of connectivity restoration.
+- **Attribute Type**: Reliability
+- **Rationale**: Reduces user frustration and loss of service due to system errors or network issues.
+- **Acceptance Criteria**: System logs confirm downtime and recovery periods; monthly uptime and recovery tests meet targets.
 
-In order to facilitate future updates, such as new accessibility features or third-party integrations, the codebase will adhere to modular architecture and documentation standards.
+### 3.7.5 REQ_SA006: Portability  
+
+- **Description**: The system codebase shall follow modular architecture and documentation standards, supporting future updates (e.g., new features, third-party integrations) without major rewrites.
+- **Attribute Type**: Maintainability
+- **Rationale**: Facilitates efficient maintenance, faster bug fixes, and easier onboarding of new developers or feature expansion.
+- **Acceptance Criteria**: Code reviews confirm adherence to documentation and modularity standards; updates are implemented without major refactoring.
 
 ### 3.7.6 Portability  
 
-Through web browsers and mobile apps, MMUAccess will work on a variety of systems, including Windows, macOS, Android, and iOS. To accommodate various screen sizes and devices, the application will be created with responsive design.
+- **Description**: MMUAccess shall function on modern web browsers (Chrome, Firefox, Safari, Edge) and mobile operating systems (iOS, Android), using responsive design to support various screen sizes.
+- **Attribute Type**: Portability
+- **Rationale**: Enables broad accessibility and device compatibility for all campus users.
+- **Acceptance Criteria**: Usability and compatibility testing confirm correct operation across all supported platforms and devices.
+
+<!-- Group2 Idea -->
+### 3.7.7 REQ_SA007: Scalability
+
+- **Description**: The system shall support scaling to accommodate increased user load or new feature modules with minimal downtime.
+- **Attribute Type**: Scalability
+- **Rationale**: Ensures the platform remains performant as the university population or requirements grow.
+- **Acceptance Criteria**: System can be upgraded to support double the initial user capacity (e.g., from 500 to 1000 concurrent users) without major architectural changes or more than 1 hour of planned downtime.
+
+### 3.7.8 REQ_SA008: Auditability
+
+- **Description**: The system shall log all critical administrative actions (e.g., event/facility updates, user role changes) for at least 1 year, and provide authorized users with access to audit logs.
+- **Attribute Type**: Auditability
+- **Rationale**: Supports troubleshooting, security investigations, and compliance.
+- **Acceptance Criteria**: Audit logs are available for inspection and meet data retention policies.
+
+### 3.7.9 REQ_SA009: Performance 
+
+- **Description**: The system shall respond to user actions within 3 seconds for 95% of requests, as specified in section 3.2.
+- **Attribute Type**: Performance
+- **Rationale**: Ensures good user experience and supports campus operational needs.
+- **Acceptance Criteria**: System logs and tests confirm average and percentile response times.
+
 
 ## 3.8 Supporting Information
 
