@@ -510,29 +510,120 @@ MMUAccess shall be designed with a strong focus on ease of use and accessibility
 
 The system shall provide a responsive web interface compatible with Chrome, Firefox, Safari, and mobile browsers.
 
-- Mobile interface shall be optimized for both iOS and Android devices.
-- The UI shall follow consistent design patterns, with accessible components (buttons, input fields, modals) adhering to WCAG 2.1.
-- The home page shall display navigation shortcuts, recent events, and campus alerts.
-- Users shall be able to access features via touch, keyboard, or voice commands.
+#### REQ_I001: User Interface – Responsiveness
+
+- **Version**: 1.0
+- **Description**: The system shall provide a responsive web interface compatible with major browsers (Chrome, Firefox, Safari, Edge) and mobile browsers.
+- **Priority**: High
+- **Acceptance Criteria**: The user interface displays correctly and functions as intended on at least 95% of devices and browsers tested.
+- **Author**: Team G1
+
+---
+
+#### REQ_I002: User Interface – Mobile Optimization
+
+- **Version**: 1.0
+- **Description**: The mobile interface shall be optimized for both iOS and Android devices, supporting common screen sizes and resolutions.
+- **Priority**: High
+- **Acceptance Criteria**: Usability testing confirms smooth operation and correct display on the latest iOS and Android devices.
+- **Author**: Team G1
+
+---
+
+#### REQ_I003: User Interface – Accessibility
+
+- **Version**: 1.0
+- **Description**: All user interface components (buttons, input fields, modals, etc.) shall comply with WCAG 2.1 Level AA accessibility standards.
+- **Priority**: High
+- **Acceptance Criteria**: Accessibility audit reports no critical failures for WCAG 2.1 Level AA compliance.
+- **Author**: Team G1
+
+---
+
+#### REQ_I004: Home Page Content Display
+
+- **Version**: 1.0
+- **Description**: The home page shall display navigation shortcuts, recent events, and campus alerts in a clear and accessible layout.
+- **Priority**: Medium
+- **Acceptance Criteria**: Usability testing confirms that users can easily find and use navigation shortcuts, see current/recent events, and view campus alerts on the home page.
+- **Author**: Team G1
+
+
+---
+
+#### REQ_I005: User Interface – Multimodal Interaction
+
+- **Version**: 1.0
+- **Description**: Users shall be able to access core features via touch, keyboard, and voice commands.
+- **Priority**: Medium
+- **Acceptance Criteria**: Usability testing confirms successful completion of key tasks using all three input methods.
+- **Author**: Team G1
 
 3.4.2 Hardware Interface
 
 The system shall be operable on common smartphones, tablets, and desktop computers with standard web browsers.
 
-- No special hardware is required beyond typical accessibility tools (e.g., screen readers, voice-to-text).
+#### REQ_I006: Hardware Interface
+
+- **Version**: 1.0
+- **Description**: The system shall operate on standard smartphones, tablets, and desktop computers without requiring special hardware beyond typical accessibility tools (e.g., screen readers).
+- **Priority**: Medium
+- **Acceptance Criteria**: System passes compatibility testing on a range of modern consumer devices.
+- **Author**: Team G1
+
+---
 
 3.4.3 Software Interface
 
 The system shall integrate with:
 
-- MMU Event Calendar API – for retrieving event details and locations.
-- MMU Facilities Management Database – for updated campus infrastructure data.
-- All external integrations shall use secure RESTful APIs with JSON format.
+#### REQ_I007: Software Interface – Event Calendar Integration
+
+- **Version**: 1.0
+- **Description**: The system shall integrate with the MMU Event Calendar API to retrieve event details and locations.
+- **Priority**: High
+- **Acceptance Criteria**: System successfully syncs event data from the API; integration is verified through functional testing.
+- **Author**: Team G1
+
+---
+
+#### REQ_I008: Software Interface – Facilities Management Integration
+
+- **Version**: 1.0
+- **Description**: The system shall integrate with the MMU Facilities Management Database for real-time campus infrastructure data.
+- **Priority**: High
+- **Acceptance Criteria**: System successfully retrieves and updates facility data; integration is verified through functional testing.
+- **Author**: Team G1
+
+---
+
+#### REQ_I009: Software Interface – Secure API Standards
+
+- **Version**: 1.0
+- **Description**: All external system integrations shall use secure RESTful APIs with JSON format for data exchange.
+- **Priority**: High
+- **Acceptance Criteria**: API endpoints use HTTPS and conform to security and data format standards; verified through code and penetration testing.
+- **Author**: Team G1
 
 3.4.4 Communications Interface
 
-- All communication between client and server shall use HTTPS for secure transmission.
-- The system shall be hosted on a cloud-based platform supporting real-time updates and reliable uptime.
+#### REQ_I010: Communications Interface – Secure Data Transmission
+
+- **Version**: 1.0
+- **Description**: All communications between client and server shall use HTTPS for secure data transmission.
+- **Priority**: High
+- **Acceptance Criteria**: All network traffic is encrypted; verified by network analysis and security audit.
+- **Author**: Team G1
+
+---
+
+#### REQ_I011: Communications Interface – Cloud Hosting & Real-Time Updates
+
+- **Version**: 1.0
+- **Description**: The system shall be hosted on a cloud platform supporting real-time updates and high availability.
+- **Priority**: High
+- **Acceptance Criteria**: Cloud deployment is operational and meets availability requirements; real-time update features function in system tests.
+- **Author**: Team G1
 
 ## 3.5 Logical Database Requirement
 

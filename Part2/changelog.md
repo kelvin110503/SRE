@@ -5,6 +5,11 @@ Change Description:
 Reason: 
 
 Author: Sim Boon Xun <wen_xun2002@hotmail.com>
+Date:   Mon Jun 3 17:00:00 2025 +0800
+Change Description: Refactored 3.4 Interface Requirements in SRS.md. Added structured IDs, expanded requirements for user interface, accessibility, device compatibility, software integration, API security, and cloud communications with measurable acceptance criteria.
+Reason: To ensure all system interfaces are comprehensively defined, easily testable, and aligned with current web/mobile application and accessibility standards, supporting robust integration and secure operation.
+
+Author: Sim Boon Xun <wen_xun2002@hotmail.com>
 Date:   Wed Jun 4 14:00:00 2025 +0800
 Change Description: Refactored 3.3 Usability Requirements section in SRS.md. Added structured requirement IDs, detailed descriptions, priorities, and clear acceptance criteria for intuitive navigation, efficiency, accessibility, user guidance, standards compliance, and user satisfaction.
 Reason: To ensure usability requirements are explicit, testable, and fully aligned with recognized usability and accessibility standards, enabling thorough validation and clear communication to all stakeholders during development and presentation.
