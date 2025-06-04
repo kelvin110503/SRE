@@ -5,6 +5,11 @@ Change Description:
 Reason: 
 
 Author: Sim Boon Xun <wen_xun2002@hotmail.com>
+Date:   Mon Jun 4 18:00:00 2025 +0800
+Change Description: Refined 3.8 Supporting Information by expanding and structuring the references and background documents section, and adding context for each resource used in the SRS development and validation process.
+Reason: To ensure all supporting materials are clearly documented and traceable, facilitating stakeholder review and demonstrating thorough requirements engineering practice.
+
+Author: Sim Boon Xun <wen_xun2002@hotmail.com>
 Date:   Mon Jun 4 16:55:24 2025 +0800
 Change Description: Reorganized and enhanced section 3.7 Software System Attributes in SRS.md. Structured each attribute with clear description, rationale, and measurable acceptance criteria. Added new system attributes for Scalability, Interoperability, Auditability, and Localization, expanding on the original SRS content.
 Reason: To make all system attribute requirements explicit, testable, and directly traceable, supporting robust system design, future system evolution, and compliance. This aligns with software engineering best practices and provides clear communication for both documentation and presentation.

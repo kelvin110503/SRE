@@ -865,11 +865,16 @@ Design constraints specify limitations on the design or implementation of the sy
 
 ### 3.8.1 References and Background information that supports the development of MMUAccess
 
-- MMU Campus Map and Facilities Management Data
-- MMU Official Event Calendar API documentation
-- WCAG 2.1 Accessibility Guidelines (<https://www.w3.org/WAI/WCAG21/quickref/>)
-- IEEE 830-1998 Standard for SRS Structure
-- Comments on accessibility from student questionnaires and interviews that were done during the elicitation stage
+- **MMU Campus Map and Facilities Management Data**
+    - *Used for*: Campus navigation feature and facility database structure.
+- **MMU Official Event Calendar API documentation**
+    - *Used for*: Integration and event-related functional requirements.
+- **WCAG 2.1 Accessibility Guidelines (<https://www.w3.org/WAI/WCAG21/quickref/>)**
+    - *Used for*: Accessibility requirements and user interface design standards.
+- **IEEE 830-1998 Standard for SRS Structure**
+    - *Used for*: SRS document structure and requirement formalization.
+- **Comments on accessibility from student questionnaires and interviews that were done during the elicitation stage**
+    - *Used for*: Functional and usability requirements refinement.
 
 ### 3.8.2 Requirements Traceability Matrix
 
