@@ -4,18 +4,23 @@ Date:
 Change Description: 
 Reason: 
 
+Author: Sim Boon Xun wen_xun2002@hotmail.com
+Date: Mon Jun 4 16:10:00 2025 +0800
+Change Description: Enhanced 3.5 Logical Database Requirements by adding detailed entity descriptions, standardized ERD figure caption, and summarized data integrity constraints. Inserted ERD image and updated explanatory text for clarity.
+Reason: To clarify the database structure, improve documentation quality, and ensure all major entities and relationships are fully explained and aligned with the SRS best practices, supporting effective system implementation and maintenance.
+
 Author: Sim Boon Xun <wen_xun2002@hotmail.com>
-Date:   Mon Jun 3 17:00:00 2025 +0800
+Date:   Mon Jun 4 14:37:35 2025 +0800
 Change Description: Refactored 3.4 Interface Requirements in SRS.md. Added structured IDs, expanded requirements for user interface, accessibility, device compatibility, software integration, API security, and cloud communications with measurable acceptance criteria.
 Reason: To ensure all system interfaces are comprehensively defined, easily testable, and aligned with current web/mobile application and accessibility standards, supporting robust integration and secure operation.
 
 Author: Sim Boon Xun <wen_xun2002@hotmail.com>
-Date:   Wed Jun 4 14:00:00 2025 +0800
+Date:   Wed Jun 4 14:01:04 2025 +0800
 Change Description: Refactored 3.3 Usability Requirements section in SRS.md. Added structured requirement IDs, detailed descriptions, priorities, and clear acceptance criteria for intuitive navigation, efficiency, accessibility, user guidance, standards compliance, and user satisfaction.
 Reason: To ensure usability requirements are explicit, testable, and fully aligned with recognized usability and accessibility standards, enabling thorough validation and clear communication to all stakeholders during development and presentation.
 
 Author: Sim Boon Xun <wen_xun2002@hotmail.com>
-Date:   Tue Jun 3 20:12:00 2025 +0800
+Date:   Tue Jun 3 20:17:12 2025 +0800
 Change Description: Refactored 3.2 Performance Requirements section in SRS.md. Added detailed requirement IDs, descriptions, priorities, and acceptance criteria for response time, concurrency, availability, backup, and scalability.
 Reason: To ensure all system performance requirements are explicit, measurable, and comprehensively address the main performance areas expected for a modern campus system—including response time, concurrency, system availability, backup/recovery, and scalability. 
 This level of detail helps both developers and testers to accurately implement and validate performance targets. 
@@ -23,7 +28,7 @@ It also supports requirements traceability and facilitates clear communication a
 Aligning with SRS best practices and ISO/IEC/IEEE 29148 not only meets course standards but also enables the team to clearly explain and justify these requirements during the project presentation.
 
 Author: Sim Boon Xun <wen_xun2002@hotmail.com>
-Date:   Mon Jun 2 23:35:00 2025 +0800
+Date:   Mon Jun 2 23:36:39 2025 +0800
 Change Description: 3.9-Supporting information part --Added initial Requirements Traceability Matrix table to the Supporting Information section in SRS.md.
 Reason: To enable systematic mapping of functional requirements to corresponding use cases and features, ensuring full traceability and compliance with SRS standards.
 

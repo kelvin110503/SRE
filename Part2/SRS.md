@@ -642,6 +642,18 @@ Data Entities and Attributes
 | **EventImpact** | Links events to impacted facilities or routes. | ImpactID (PK), EventID (FK), FacilityID (FK), RouteID (FK, optional), ImpactDescription |
 | **UpdateLog** | Logs updates made by admin staff. | UpdateID (PK), UserID (FK), EntityModified, ModificationDetails, Timestamp |
 
+<!-- Group 2 changes version -->
+| **Entity Name** | **Description** | **Key Attributes** |
+| --- | --- | --- |
+| **User** | Represents system users (students, staff, visitors) | UserID (PK), Name, Role, Email(Unique), PasswordHash, AccessibilityNeeds |
+| **DeviceSession** | Stores session data.| SessionID (PK), UserID (FK), DeviceType, LoginTimestamp, LastActivityTimestamp |
+| **Building** | Campus buildings.| BuildingID (PK), Name, Latitude, Longitude, Description |
+| **Facility** | Accessibility facilities. | FacilityID (PK), BuildingID (FK), Type, Status, LastUpdated |
+| **NavigationRoute** | Routes across campus. | RouteID (PK), StartPoint, EndPoint, IsAccessible, PathDetails, EstimatedTime |
+| **Event** | Campus events. | EventID (PK), Title, Description, StartTime, EndTime, Location, IsAccessible, OrganizerContact |
+| **EventImpact** | Impact of events on facilities/routes. | ImpactID (PK), EventID (FK), FacilityID (FK), RouteID (FK, optional), ImpactDescription |
+| **UpdateLog** | Tracks admin updates. | UpdateID (PK), UserID (FK), EntityModified, ModificationDetails, Timestamp |
+
 _Table 3.5.1 Data Entities and Attributes_
 
 Relationship Between Entities
@@ -674,6 +686,14 @@ Description automatically generated with medium confidence](data:image/png;base6
 _Figure 3.5.1 Entity Relationship Diagram_
 
 Data Integrity and Constraints
+
+\- **Primary Keys**
+
+- All PKs are unique, auto-incremented if needed.
+
+\- **Foreign Keys**
+
+- Ensure referential integrity between related entities (e.g., Facility.BuildingID references Building.BuildingID).
 
 \- **Unique Constraints**
 
