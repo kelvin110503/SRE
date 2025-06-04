@@ -4,6 +4,11 @@ Date:
 Change Description: 
 Reason: 
 
+Author: Sim Boon Xun <wen_xun2002@hotmail.com>
+Date:   Mon Jun 3 17:30:00 2025 +0800
+Change Description: Refined and expanded 3.6 Design Constraints in SRS.md, adding clear sub-requirements with constraint types, rationales, and measurable acceptance criteria, without removing or altering original SRS content.
+Reason: To clarify and systematize design constraints, facilitate stakeholder understanding, and support effective system development and presentation in line with software engineering best practices.
+
 Author: Sim Boon Xun wen_xun2002@hotmail.com
 Date: Mon Jun 4 16:10:00 2025 +0800
 Change Description: Enhanced 3.5 Logical Database Requirements by adding detailed entity descriptions, standardized ERD figure caption, and summarized data integrity constraints. Inserted ERD image and updated explanatory text for clarity.

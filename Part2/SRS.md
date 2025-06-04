@@ -736,44 +736,62 @@ Design constraints specify limitations on the design or implementation of the sy
 
 **Design Constrains**
 
-**3.6.1 Platform Compatibility**
+**3.6.1 REQ_D001: Platform Compatibility**
 
-The system shall be implemented as a responsive web and mobile application. It must function consistently across multiple platforms and devices, including smartphones, tablets, and desktop computers, using standard-compliant web technologies.
+- **Description**: The system shall be implemented as a responsive web and mobile application, functioning consistently across smartphones, tablets, and desktop computers using standard-compliant web technologies.
+- **Constraint Type**: Platform
+- **Rationale**: Ensures all users can access the system regardless of device, supporting inclusivity and reach.
+- **Acceptance Criteria**: Usability testing on a representative range of devices confirms correct functionality and appearance.
 
-**3.6.2 Accessibility Standards**
+**3.6.2 REQ_D002: Accessibility Standards Compliance**
 
-The user interface design must comply with the **Web Content Accessibility Guidelines (WCAG) 2.1**, ensuring that the system is usable by individuals with visual, auditory, or motor impairments.
+- **Description**: The user interface shall comply with WCAG 2.1 Level AA to ensure accessibility for users with visual, auditory, or motor impairments.
+- **Constraint Type**: Regulatory
+- **Rationale**: Aligns with international standards and legal requirements, supporting users with disabilities.
+- **Acceptance Criteria**: Accessibility audit reports show compliance with WCAG 2.1 Level AA.
 
-**3.6.3 Integration Requirements**
+**3.6.3 REQ_D003: Integration Requirements**
 
-MMUAccess shall integrate with the following existing university systems:
+- **Description**: The system shall integrate with the MMU event calendar system and campus facilities management database, adhering to each system’s data formats, API specifications, and authentication protocols.
+- **Constraint Type**: Integration/Interoperability
+- **Rationale**: Enables real-time data synchronization and ensures compatibility with existing campus systems.
+- **Acceptance Criteria**: Successful integration testing; system can fetch, update, and display data from external APIs as specified.
 
-- The **official MMU event calendar system**, to fetch event details and update the accessibility status of events.
-- The **campus facilities management database**, to retrieve real-time information about the availability and status of paths, elevators, and facilities.
+**3.6.4 REQ_D004: Technology Stack Constraints**
 
-All integrations must adhere to the respective systems’ data formats, API specifications, and authentication protocols.
+- **Description**: The frontend shall be built using HTML5, CSS3, and JavaScript (preferably React). The backend shall use Node.js or other approved server-side technology. Communication must use RESTful APIs.
+- **Constraint Type**: Technology/Implementation
+- **Rationale**: Aligns with university IT standards and available expertise; ensures maintainability and scalability.
+- **Acceptance Criteria**: Technology choices are documented; codebase reflects specified stack.
 
-**3.6.4 Technology Constraints**
+**3.6.5 REQ_D005: Security and Privacy Compliance**
 
-- The frontend of the system shall be developed using **HTML5**, **CSS3**, and **JavaScript** (preferably using the **React** framework).
-- The backend must be built using **Node.js** or any other server-side technology approved by MMU’s IT department.
-- Communication between client and server components shall use **RESTful APIs**.
+ **Description**: The system shall comply with the Personal Data Protection Act (PDPA) of Malaysia, using secure password hashing and session management.
+- **Constraint Type**: Regulatory/Security
+- **Rationale**: Protects sensitive user data and meets legal obligations.
+- **Acceptance Criteria**: Security audit confirms PDPA compliance and no major vulnerabilities.
 
-**3.6.5 Security and Privacy Compliance**
+**3.6.6 REQ_D006: Network Dependency**
 
-All personal and sensitive user data must be managed in compliance with the **Personal Data Protection Act (PDPA) of Malaysia**. The system shall employ secure password hashing algorithms and implement secure session management for user authentication.
+- **Description**: The application shall require an active internet connection for real-time features such as live updates and navigation recalculation.
+- **Constraint Type**: Operational
+- **Rationale**: Real-time data exchange is essential for system functionality.
+- **Acceptance Criteria**: System gracefully handles network loss, and displays user-friendly error messages.
 
-**3.6.6 Network Dependency**
+**3.6.7 REQ_D007: Maintainability**
 
-The application depends on an active internet connection to deliver real-time functionalities, including live navigation updates, event impact notifications, and route recalculations.
+- **Description**: Administrative staff shall be able to maintain and update event and facility data through a secure admin interface, without developer intervention.
+- **Constraint Type**: Maintainability/Usability
+- **Rationale**: Reduces system downtime and maintenance costs.
+- **Acceptance Criteria**: Admin interface enables authorized users to manage content as specified.
 
-**3.6.7 Maintainability**
+**3.6.8 REQ_D008: Database Constraints**
 
-The system must be designed to allow authorized administrative staff to maintain and update event data and campus facility statuses through a secure admin interface without requiring developer intervention.
+- **Description**: The system shall use an RDBMS (e.g., MySQL, PostgreSQL) supporting ACID properties and structured queries.
+- **Constraint Type**: Data Management
+- **Rationale**: Ensures data integrity, reliability, and consistency.
+- **Acceptance Criteria**: Database setup and testing confirm compliance with ACID principles.
 
-**3.6.8 Database Constraints**
-
-A **relational database management system (RDBMS)** such as **MySQL** or **PostgreSQL** shall be used to ensure data integrity, support structured queries, and maintain ACID (Atomicity, Consistency, Isolation, Durability) compliance.
 
 ## 3.7 Software System Attributes
 
