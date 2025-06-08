@@ -5,6 +5,11 @@ Change Description:
 Reason: 
 
 Author: Sim Boon Xun <wen_xun2002@hotmail.com>
+Date:    Sun Jun 8 22:00:00 2025 +0800
+Change Description: add 5 requirement on 3.1, then add some content on 3.2- 3.3
+Reason: add 5 requirement for completely the SRS
+
+Author: Sim Boon Xun <wen_xun2002@hotmail.com>
 Date:   Mon Jun 4 18:00:00 2025 +0800
 Change Description: Refined 3.8 Supporting Information by expanding and structuring the references and background documents section, and adding context for each resource used in the SRS development and validation process.
 Reason: To ensure all supporting materials are clearly documented and traceable, facilitating stakeholder review and demonstrating thorough requirements engineering practice.
@@ -19,7 +24,7 @@ Date:   Mon Jun 4 16:34:37 2025 +0800
 Change Description: Refined and expanded 3.6 Design Constraints in SRS.md, adding clear sub-requirements with constraint types, rationales, and measurable acceptance criteria, without removing or altering original SRS content.
 Reason: To clarify and systematize design constraints, facilitate stakeholder understanding, and support effective system development and presentation in line with software engineering best practices.
 
-Author: Sim Boon Xun wen_xun2002@hotmail.com
+Author: Sim Boon Xun <wen_xun2002@hotmail.com>
 Date: Mon Jun 4 16:10:00 2025 +0800
 Change Description: Enhanced 3.5 Logical Database Requirements by adding detailed entity descriptions, standardized ERD figure caption, and summarized data integrity constraints. Inserted ERD image and updated explanatory text for clarity.
 Reason: To clarify the database structure, improve documentation quality, and ensure all major entities and relationships are fully explained and aligned with the SRS best practices, supporting effective system implementation and maintenance.

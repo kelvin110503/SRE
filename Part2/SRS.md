@@ -203,6 +203,51 @@ AI-generated content may be incorrect.](data:image/png;base64,iVBORw0KGgoAAAANSU
 - **Author**: Naqib
 
 ---
+<!-- Group2 Idea -->
+#### REQ_F007: Class Schedule Integration
+- **Version**: 1.0
+- **Description**: The system shall allow student users to view and sync their personalized class schedule, including course name, time, venue, and updates from the university timetable.
+- **Priority**: High
+- **Acceptance Criteria**: Students can access a complete list of upcoming classes with accurate schedule data; changes in timetable are reflected in the app within 2 minutes.
+- **Author**: Sim Boon Xun
+
+---
+
+#### REQ_F008: Campus News Feed Integration
+- **Version**: 1.0
+- **Description**: The system shall display a campus news feed on the home page, providing official announcements, campus updates, and policy news relevant to users.
+- **Priority**: Medium
+- **Acceptance Criteria**: Users can view a list of current news headlines and summaries; tapping a headline displays the full article.
+- **Author**: Sim Boon Xun
+
+---
+
+#### REQ_F009: Customizable Notification Filters
+- **Version**: 1.0
+- **Description**: The system shall allow users to customize notification preferences, including filtering by type (event, facility, news), urgency, and delivery channel.
+- **Priority**: High
+- **Acceptance Criteria**: Users can set notification preferences in the app settings and only receive notifications according to their choices.
+- **Author**: Sim Boon Xun
+
+---
+
+#### REQ_F010: Smart Suggestions / Context-Aware Alerts
+- **Version**: 1.0
+- **Description**: The system shall provide users with personalized, context-aware suggestions or reminders (e.g., “You have 15 minutes before your next class”) based on timetable, location, or current campus status.
+- **Priority**: Medium
+- **Acceptance Criteria**: Users receive timely smart suggestions relevant to their class schedule and location; suggestions are delivered at least 10 minutes before the related event when possible.
+- **Author**: Sim Boon Xun
+
+---
+
+#### REQ_F011: Notification Fatigue Prevention
+- **Version**: 1.0
+- **Description**: The system shall provide notification fatigue prevention features, such as batching non-urgent notifications and allowing users to mute or snooze repeated alerts.
+- **Priority**: Medium
+- **Acceptance Criteria**: Users can enable notification batching or “Do Not Disturb” mode; the system limits non-urgent notifications to no more than 3 per hour by default.
+- **Author**: Sim Boon Xun
+
+---
 
 1<sup>st</sup> use case
 
@@ -376,6 +421,102 @@ AI-generated content may be incorrect.](data:image/png;base64,iVBORw0KGgoAAAANSU
 
 #### Figure 7.0 State Diagram – Admin Update Facility
 
+7<sup>th</sup> Use case
+
+| **Use Case ID** | UC007 | | **Version** | 1.1 |
+| --- | --- | | --- | --- |
+| **Feature** | F007 Class Schedule Integration | | | |
+| **Purpose** | To allow students to view their personalized class timetable, including details and real-time updates. | | | |
+| **Actor** | Student | | | |
+| **Trigger** | Student selects "Class Schedule" from the navigation menu. | | | |
+| **Precondition** | Student is logged in and has an assigned class schedule. | | | |
+| **Scenario Name**                 | Step | Action | | |
+| **Main Flow**                     | 1    | Student opens class schedule page. | | |
+|                                   | 2    | System retrieves and displays current and upcoming classes. | | |
+|                                   | 3    | Student clicks a class for details/location. | | |
+| **Alternative Flow – No Classes** | 1.1  | No schedule found for this student. | | |
+|                                   | 1.2  | System displays: "No classes scheduled." | | |
+| **Rules** | Schedule includes course name, time, location, lecturer. | | | |
+| **Author** | Sim Boon Xun | | | |
+
+
+
+8<sup>th</sup> Use case
+
+| **Use Case ID** | UC008 | | **Version** | 1.12 |
+| --- | --- | | --- | --- |
+| **Feature** | F008 Campus News Feed Integration | | | |
+| **Purpose** | To allow users to view campus news, announcements, and alerts from a centralized feed. | | | |
+| **Actor** | User | | | |
+| **Trigger** | User selects "News Feed" or opens the app homepage. | | | |
+| **Precondition** | News feed data is available from the university backend. | | | |
+| **Scenario Name**              | Step | Action | | |
+| **Main Flow**                  | 1    | User opens the news feed. | | |
+|                                | 2    | System displays latest news headlines and summaries. | | |
+|                                | 3    | User selects a headline to read full details. | | |
+| **Alternative Flow – No News** | 2.1  | No news found. | | |
+|                                | 2.2  | System displays: "No news available." | | |
+| **Rules** | News items include title, date, summary, and details. | | | |
+| **Author** | Sim Boon Xun | | | |
+
+9<sup>th</sup> Use case
+
+| **Use Case ID** | UC009 | | **Version** | 1.0 |
+| --- | --- | | --- | --- |
+| **Feature** | F009 Customizable Notification Filters | | | |
+| **Purpose** | To allow users to set and manage their notification preferences, filtering by type, urgency, and channel. | | | |
+| **Actor** | User | | | |
+| **Trigger** | User navigates to "Notification Settings". | | | |
+| **Precondition** | User is logged in. | | | |
+| **Scenario Name**                         | Step | Action | | |
+| **Main Flow**                             | 1    | User opens notification settings page. | | |
+|                                           | 2    | User selects desired notification types/urgency/channels. | | |
+|                                           | 3    | System saves and applies these preferences. | | |
+| **Alternative Flow – No Preferences Set** | 2.1  | User does not select any notification type. | | |
+|                                           | 2.2  | System prompts: "Please select at least one notification type." | | |
+| **Rules** | Preferences are saved per user account. | | | |
+| **Author** | Sim Boon Xun | | | |
+
+
+
+10<sup>th</sup> Use case
+
+| **Use Case ID** | UC010 | | **Version** | 1.0 |
+| --- | --- | | --- | --- |
+| **Feature** | F010 Smart Suggestions / Context-Aware Alerts | | | |
+| **Purpose** | To proactively provide users with relevant reminders or route suggestions based on schedule, location, or event data. | | | |
+| **Acto** | User | | | |
+| **Trigger** | System detects relevant upcoming class/event or context change. | | | |
+| **Precondition** | User's schedule/location/context is available. | | | |
+| **Scenario Name**                             | Step | Action | | |
+| **Main Flow**                                 | 1    | System checks user schedule, location, and event data. | | |
+|                                               | 2    | If relevant, system sends personalized suggestion or alert. | | |
+| **Alternative Flow – No Relevant Context**    | 2.1  | No upcoming events or actionable context. | | |
+|                                               | 2.2  | No suggestion or alert is generated. | | |
+| **Rules** | Suggestions must be timely and context-specific. | | | |
+| **Author** | Sim Boon Xun | | | |
+
+
+
+11<sup>th</sup> Use case
+
+| **Use Case ID** | UC011 | | **Version** | 1.0 |
+| --- | --- | | --- | --- |
+| **Feature** | F011 Notification Fatigue Prevention | | | |
+| **Purpose** | To help users reduce or mute non-urgent notifications, batch alerts, and enable “Do Not Disturb” periods. | | | |
+| **Actor** | User | | | |
+| **Trigger** | User accesses notification controls/settings. | | | |
+| **Precondition** | User is logged in. | | | |
+| **Scenario Name**                                 | Step | Action | | |
+| **Main Flow**                                     | 1    | User opens notification control or DND settings. | | |
+|                                                   | 2    | User sets notification batching or Do Not Disturb period. | | |
+|                                                   | 3    | System applies new notification rules. | | |
+| **Alternative Flow – All Notifications Disabled** | 2.1  | User disables all notifications. | | |
+|                                                   | 2.2  | System displays: "Notifications are currently disabled." | | |
+| **Rules** | System should not send more than 3 non-urgent notifications per hour by default. | | | |
+| **Author** | Sim Boon Xun | | | |
+
+
 ## 3.2 Performance Requirements
 
 #### REQ_P001: Response Time
@@ -427,6 +568,52 @@ AI-generated content may be incorrect.](data:image/png;base64,iVBORw0KGgoAAAANSU
 - **Author**: Team G2
 
 ---
+<!-- Group 2 -->
+#### REQ_P006: Class Schedule Sync Latency
+- **Version**: 1.1
+- **Description**: The system shall update a student's class schedule in the app within 2 minutes of any change in the university's timetable system.
+- **Priority**: High
+- **Acceptance Criteria**: 95% of schedule changes are reflected within 2 minutes of update in source system.
+- **Author**: Sim Boon Xun
+
+---
+
+#### REQ_P007: News Feed Load Time
+- **Version**: 1.1
+- **Description**: The system shall display campus news headlines within 2 seconds of the user opening the news feed, under normal network conditions.
+- **Priority**: Medium
+- **Acceptance Criteria**: 95% of news feed openings display headlines within 2 seconds.
+- **Author**: Sim Boon Xun
+
+---
+
+#### REQ_P008: Notification Filter Application Time
+- **Version**: 1.1
+- **Description**: Changes to notification filter preferences shall take effect within 5 seconds after user confirmation.
+- **Priority**: High
+- **Acceptance Criteria**: 95% of filter changes are active and reflected in notification delivery within 5 seconds.
+- **Author**: Sim Boon Xun
+
+---
+
+#### REQ_P009: Smart Suggestions Delivery Time
+- **Version**: 1.1
+- **Description**: Context-aware suggestions (e.g., class reminders) shall be delivered to the user at least 10 minutes before the relevant event when possible.
+- **Priority**: Medium
+- **Acceptance Criteria**: 95% of suggestions are delivered on time based on user context and schedule.
+- **uthor**: Sim Boon Xun
+
+---
+
+#### REQ_P010: Notification Fatigue Prevention Efficiency
+- **Version**: 1.1
+- **Description**: The system shall limit non-urgent notification delivery to no more than 3 per hour by default for each user.
+- **Priority**: Medium
+- **Acceptance Criteria**: No user receives more than 3 non-urgent notifications per hour under default settings.
+- **Author**: Sim Boon Xun
+
+---
+
 
 ## 3.3 Usability Requirement
 
@@ -503,6 +690,41 @@ MMUAccess shall be designed with a strong focus on ease of use and accessibility
 - **Author**: Team G2
 
 ---
+<!-- Group2 -->
+#### REQ_U008: Class Schedule Usability
+- **Version**: 1.0
+- **Description**: The system shall present class schedule information in a clear, calendar-style interface that allows students to access class details and navigation in no more than 2 taps.
+- **Priority**: High
+- **Acceptance Criteria**: Usability testing confirms 90% of students can access and interpret their schedule on first attempt, and use “navigate to class” without confusion.
+- **Author**: Sim Boon Xun
+
+#### REQ_U009: News Feed Usability
+- **Version**: 1.0
+- **Description**: The system shall display campus news and announcements in an easily scannable, prioritized list with headlines, summaries, and a one-tap option to read more.
+- **Priority**: Medium
+- **Acceptance Criteria**: 90% of users report they can easily find and read important news items during usability tests.
+- **Author**: Sim Boon Xun
+
+#### REQ_U010: Notification Filter Usability
+- **Version**: 1.0
+- **Description**: The system shall provide an intuitive notification settings page, enabling users to set and adjust notification filters with no more than 3 clicks or taps.
+- **Priority**: High
+- **Acceptance Criteria**: Usability tests confirm 90% of users can set preferences on first try, and only receive desired notifications.
+- **Author**: Sim Boon Xun
+
+#### REQ_U011: Smart Suggestions Usability
+- **Version**: 1.0
+- **Description**: Smart suggestions and alerts shall appear in a dedicated, non-intrusive notification area and use concise, context-relevant language.
+- **Priority**: Medium
+- **Acceptance Criteria**: 90% of test users report that suggestions are easy to notice and understand, and do not interfere with normal app usage.
+- **Author**: Sim Boon Xun
+
+#### REQ_U012: Notification Fatigue Prevention Usability
+- **Version**: 1.0
+- **Description**: The system shall make notification fatigue prevention settings (e.g., mute/batch) discoverable from the notification center or settings, and provide clear feedback when enabled.
+- **Priority**: Medium
+- **Acceptance Criteria**: 90% of users can find and enable notification batching or mute, and confirm their status, during usability testing.
+- **Author**: Sim Boon Xun
 
 ## 3.4 Interface Requirement
 
@@ -863,7 +1085,7 @@ Design constraints specify limitations on the design or implementation of the sy
 
 ## 3.8 Supporting Information
 
-### 3.8.1 References and Background information that supports the development of MMUAccess
+### 3.8.1 References and Background Information
 
 - **MMU Campus Map and Facilities Management Data**
     - *Used for*: Campus navigation feature and facility database structure.
@@ -873,22 +1095,104 @@ Design constraints specify limitations on the design or implementation of the sy
     - *Used for*: Accessibility requirements and user interface design standards.
 - **IEEE 830-1998 Standard for SRS Structure**
     - *Used for*: SRS document structure and requirement formalization.
-- **Comments on accessibility from student questionnaires and interviews that were done during the elicitation stage**
+- **Comments on accessibility from student questionnaires and interviews**
     - *Used for*: Functional and usability requirements refinement.
 
-### 3.8.2 Requirements Traceability Matrix
+---
 
-#### Requirements Traceability Matrix
+### 3.8.2 Validation Sessions
 
-| Requirement ID | Use Case ID | System Feature               | Stakeholder       | Notes                        |
-|----------------|-------------|------------------------------|-------------------|------------------------------|
-| REQ_F001       | UC001       | User Registration/Login      | User              | Original SRS                 |
-| REQ_F002       | UC002       | View Campus Events           | User              | Original SRS                 |
-| REQ_F003       | UC002       | Display Event Details        | User              | Original SRS                 |
-| REQ_F004       | UC002       | Event Filtering              | User              | Original SRS                 |
-| REQ_F005       | UC003       | Accessible Route Guidance    | User              | Original SRS                 |
-| REQ_F006       | UC002       | No Events Message            | User              | Original SRS                 |
-| REQ_F007       | UC007       | Obstacle Reporting           | User, Admin       | (To be added if needed)      |
+| Session ID | Date & Time       | Technique      | Section Reviewed          | Participant & Role                             | No. of Defect |
+|------------|------------------|---------------|--------------------------|------------------------------------------------|---------------|
+| VS01       | 2025-06-01 20:00 | Inspection    | 3.1-3.3 Functions/Performance | Sim Boon Xun (Leader,Recorder), Hong Chia Qian (Reviewer,Negotiator) | 4             |
+| VS02       | 2025-06-02 21:00 | Walkthrough   | 3.4-3.6 Interface/Constraints | Sim Boon Xun (Leader,Recorder),  Hong Chia Qian (Reviewer,Negotiator)| 3             |
+
+---
+
+### 3.8.3 Defect Summary
+
+#### A. Content Defect
+
+| Req ID  | Validation and Defect Description                        | Detected By      | Comment/Suggested Fix                           | Session ID | Severity (1–5) |
+|---------|----------------------------------------------------------|------------------|-------------------------------------------------|------------|---------------|
+| REQ_F007| Missing user obstacle reporting feature.                 | Sim Boon Xun   | Add new requirement and use case for feedback.   | VS01       | 5             |
+
+#### B. Documentation Defect
+
+| Page No. | Validation and Defect Description                     | Detected By    | Comment/Suggested Fix              | Session ID | Severity (1–5) |
+|----------|------------------------------------------------------|----------------|------------------------------------|------------|---------------|
+| 12       | Use case diagram not inserted; caption missing.       | Sim Boon Xun   | Add diagram and proper caption.    | VS02       | 3             |
+
+#### C. Agreement Defect
+
+| Req ID  | Validation Description/Stakeholder Concern                  | Mismatch             | Detected By     | Session ID | Severity (1–5) |
+|---------|-------------------------------------------------------------|----------------------|-----------------|------------|---------------|
+| REQ_F004| Event filtering didn’t match student needs for category.    | Filtering options    | Sim Boon Xun  | VS01       | 4             |
+
+---
+
+### 3.8.4 Conflict Analysis
+
+| Conflict ID | Conflict Description                  | Conflict Analysis                          | Stakeholders Involved          | Session ID |
+|-------------|--------------------------------------|--------------------------------------------|-------------------------------|------------|
+| C01         | Should system support obstacle reports?| Some argued it's out of scope, but user needs confirmed importance. | Team, simulated stakeholder   | VS01       |
+
+---
+
+### 3.8.5 Conflict Resolution
+
+| Conflict ID | Conflict Resolution Strategy    | Resolved (Y/N) | Outcome                       | Justification                          |
+|-------------|-------------------------------|---------------|-------------------------------|----------------------------------------|
+| C01         | Team discussion, stakeholder feedback | Y             | Added obstacle reporting      | Strong stakeholder demand, high impact |
+
+---
+
+### 3.8.6 Change Log
+
+| Change ID | Req ID   | Summary of Change                        | Proposed By      | Date       | Session ID |
+|-----------|----------|------------------------------------------|------------------|------------|------------|
+| CH01      | REQ_F007 | Added obstacle reporting requirement     | Sim Boon Xun     | 2025-06-01 | VS01       |
+| CH02      | REQ_F004 | Enhanced event filtering options         | Sim Boon Xun     | 2025-06-01 | VS01       |
+| CH03      | N/A      | Added missing use case diagram/caption   | Sim Boon Xun     | 2025-06-02 | VS02       |
+
+---
+
+### 3.8.7 Requirements Traceability Matrix
+
+| Requirement ID | Use Case ID | System Feature             | Stakeholder       | Notes                |
+|----------------|-------------|----------------------------|-------------------|----------------------|
+| REQ_F001       | UC001       | User Registration/Login    | User              | Original SRS         |
+| REQ_F002       | UC002       | View Campus Events         | User              | Original SRS         |
+| REQ_F003       | UC002       | Display Event Details      | User              | Original SRS         |
+| REQ_F004       | UC002       | Event Filtering            | User              | Enhanced             |
+| REQ_F005       | UC003       | Accessible Route Guidance  | User              | Original SRS         |
+| REQ_F006       | UC002       | No Events Message          | User              | Original SRS         |
+| REQ_F007       | UC007       | Obstacle Reporting         | User, Admin       | Added after review   |
+
+---
+
+### 3.8.8 Role in Requirements Validation, Negotiation & Management
+
+| Student Name    | Primary Responsibility | No. of Sessions Participated |
+|-----------------|-----------------------|------------------------------|
+| Sim Boon Xun    | Leader, Facilitator   | 2                            |
+| Hong Chia Qian  | Reviewer,Negotiator   | 2                            |
+| Wang Kuang Wei  | Recorder, Reviewer    | 2                            |
+| Chia Kok Ang    | Negotiator, Reviewer  | 2                            |
+
+---
+
+### 3.8.9 Version Control & Configuration Summary
+
+| Student Name    | Commits | Pull Requests | Change Log Entries |
+|-----------------|---------|---------------|-------------------|
+| Sim Boon Xun    | 11      | 0             | 11                 |
+| Hong Chia Qian  | 0       | 0             | 0                 |
+| Wang Kuang Wei  | 0       | 0             | 0                 |
+| Chia Kok Ang    | 0       | 0             | 0                 |
+
+---
+
 
 # 4.0 Verification
 
