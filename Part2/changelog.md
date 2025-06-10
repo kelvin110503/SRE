@@ -4,6 +4,11 @@ Date:
 Change Description: 
 Reason: 
 
+Author: Hong Chia Qian <hongchiaqian@gmail.com>
+Date:   Tue Jun 10 15:30:00 2025 +0800
+Change Description: Updated SRS.md with new functional requirements and fixed formatting issues.
+Reason: To ensure all requirements are up to date and documentation is clear for the next review.
+
 Author: Sim Boon Xun <wen_xun2002@hotmail.com>
 Date:    Sun Jun 8 22:00:00 2025 +0800
 Change Description: add 5 requirement on 3.1, then add some content on 3.2- 3.3
