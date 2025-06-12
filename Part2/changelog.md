@@ -4,6 +4,11 @@ Date:
 Change Description: 
 Reason: 
 
+Author: Sim Boon Xun <wen_xun2002@hotmail.com>
+Date:    Thu Jun 12 23:40:00 2025 +0800 
+Change Description: Update 3.4 - 3.7  update SRS.md to google docs
+Reason: Update 3.4 - 3.7 add some new point for the new 5 requirement and also update SRS.md to google docs
+
 Author: Hong Chia Qian <hongchiaqian@gmail.com>
 Date:   Tue Jun 10 15:30:00 2025 +0800
 Change Description: Updated SRS.md with new functional requirements and fixed formatting issues.

@@ -738,7 +738,7 @@ The system shall provide a responsive web interface compatible with Chrome, Fire
 - **Description**: The system shall provide a responsive web interface compatible with major browsers (Chrome, Firefox, Safari, Edge) and mobile browsers.
 - **Priority**: High
 - **Acceptance Criteria**: The user interface displays correctly and functions as intended on at least 95% of devices and browsers tested.
-- **Author**: Team G1
+- **Author**: Group 1
 
 ---
 
@@ -748,7 +748,7 @@ The system shall provide a responsive web interface compatible with Chrome, Fire
 - **Description**: The mobile interface shall be optimized for both iOS and Android devices, supporting common screen sizes and resolutions.
 - **Priority**: High
 - **Acceptance Criteria**: Usability testing confirms smooth operation and correct display on the latest iOS and Android devices.
-- **Author**: Team G1
+- **Author**: Group 1
 
 ---
 
@@ -758,7 +758,7 @@ The system shall provide a responsive web interface compatible with Chrome, Fire
 - **Description**: All user interface components (buttons, input fields, modals, etc.) shall comply with WCAG 2.1 Level AA accessibility standards.
 - **Priority**: High
 - **Acceptance Criteria**: Accessibility audit reports no critical failures for WCAG 2.1 Level AA compliance.
-- **Author**: Team G1
+- **Author**: Group 1
 
 ---
 
@@ -768,7 +768,7 @@ The system shall provide a responsive web interface compatible with Chrome, Fire
 - **Description**: The home page shall display navigation shortcuts, recent events, and campus alerts in a clear and accessible layout.
 - **Priority**: Medium
 - **Acceptance Criteria**: Usability testing confirms that users can easily find and use navigation shortcuts, see current/recent events, and view campus alerts on the home page.
-- **Author**: Team G1
+- **Author**: Group 1
 
 
 ---
@@ -779,7 +779,42 @@ The system shall provide a responsive web interface compatible with Chrome, Fire
 - **Description**: Users shall be able to access core features via touch, keyboard, and voice commands.
 - **Priority**: Medium
 - **Acceptance Criteria**: Usability testing confirms successful completion of key tasks using all three input methods.
-- **Author**: Team G1
+- **Author**: Group 1
+
+#### REQ_I012: User Interface – Class Schedule Display
+- **Version**: 1.0
+- **Description**: The system shall display each user’s class schedule in a clear, calendar or timetable format, with color coding and one-tap access to class details and navigation.
+- **Priority**: High
+- **Acceptance Criteria**: Usability testing confirms that 90% of students can view and understand their class schedule at a glance, and access class detail/navigation with one tap.
+- **Author**: Group 2
+
+#### REQ_I013: User Interface – Campus News Feed
+- **Version**: 1.0
+- **Description**: The home page shall include a scrollable campus news feed showing headlines, summaries, and tap-to-expand full news items.
+- **Priority**: Medium
+- **Acceptance Criteria**: Users can access the news feed from the home page and view full articles with one tap; layout is confirmed accessible and readable on web and mobile.
+- **Author**: Group 2
+
+#### REQ_I014: User Interface – Notification Settings
+- **Version**: 1.0
+- **Description**: The system shall provide a notification settings page where users can filter notification types (events, news, facilities), urgency, and preferred channels via toggles or checkboxes.
+- **Priority**: High
+- **Acceptance Criteria**: Usability tests show that 90% of users can successfully set or update notification preferences without external help.
+- **Author**: Group 2
+
+#### REQ_I015: User Interface – Smart Suggestions / Context-Aware Alerts
+- **Version**: 1.0
+- **Description**: Smart suggestions and alerts shall be delivered through a dedicated, unobtrusive notification panel within the app, using concise and context-relevant text.
+- **Priority**: Medium
+- **Acceptance Criteria**: Users report in usability testing that suggestions are clear, helpful, and do not interfere with regular app use.
+- **Author**: Group 2
+
+#### REQ_I016: User Interface – Notification Fatigue Controls
+- **Version**: 1.0
+- **Description**: The system shall allow users to access batching, mute, and “Do Not Disturb” notification controls from the notification center or settings, with clear status indicators.
+- **Priority**: Medium
+- **Acceptance Criteria**: 90% of users can enable or disable batching/mute/DND in under three taps, and see active status indicators.
+- **Author**: Group 2
 
 3.4.2 Hardware Interface
 
@@ -791,7 +826,7 @@ The system shall be operable on common smartphones, tablets, and desktop compute
 - **Description**: The system shall operate on standard smartphones, tablets, and desktop computers without requiring special hardware beyond typical accessibility tools (e.g., screen readers).
 - **Priority**: Medium
 - **Acceptance Criteria**: System passes compatibility testing on a range of modern consumer devices.
-- **Author**: Team G1
+- **Author**: Group 1
 
 ---
 
@@ -805,7 +840,7 @@ The system shall integrate with:
 - **Description**: The system shall integrate with the MMU Event Calendar API to retrieve event details and locations.
 - **Priority**: High
 - **Acceptance Criteria**: System successfully syncs event data from the API; integration is verified through functional testing.
-- **Author**: Team G1
+- **Author**: Group 1
 
 ---
 
@@ -815,7 +850,7 @@ The system shall integrate with:
 - **Description**: The system shall integrate with the MMU Facilities Management Database for real-time campus infrastructure data.
 - **Priority**: High
 - **Acceptance Criteria**: System successfully retrieves and updates facility data; integration is verified through functional testing.
-- **Author**: Team G1
+- **Author**: Group 1
 
 ---
 
@@ -825,7 +860,21 @@ The system shall integrate with:
 - **Description**: All external system integrations shall use secure RESTful APIs with JSON format for data exchange.
 - **Priority**: High
 - **Acceptance Criteria**: API endpoints use HTTPS and conform to security and data format standards; verified through code and penetration testing.
-- **Author**: Team G1
+- **Author**: Group 1
+
+#### REQ_I017: Software Interface – Class Schedule and News API Integration
+- **Version**: 1.0
+- **Description**: The system shall integrate with the MMU Class Schedule API and the official Campus News Feed API to retrieve up-to-date user timetables and campus announcements.
+- **Priority**: High
+- **Acceptance Criteria**: System successfully syncs class schedule and news data from respective APIs; integration is verified through functional and real-time update tests.
+- **Author**: Group 2
+
+#### REQ_I018: Software Interface – Notification Delivery Platform
+- **Version**: 1.0
+- **Description**: The system shall connect to an authorized third-party notification delivery platform to support push notifications and batch messaging in accordance with user preferences.
+- **Priority**: Medium
+- **Acceptance Criteria:** The platform delivers notifications reliably during integration testing and respects user filter/batching settings.
+- **Author**: Group 2
 
 3.4.4 Communications Interface
 
@@ -846,6 +895,21 @@ The system shall integrate with:
 - **Priority**: High
 - **Acceptance Criteria**: Cloud deployment is operational and meets availability requirements; real-time update features function in system tests.
 - **Author**: Team G1
+
+#### REQ_I019: Communications Interface – Real-Time Notifications
+- **Version**: 1.0
+- **Description**: The system shall support secure, real-time communication of personalized alerts, suggestions, and news using HTTPS and/or WebSocket or standard push notification services.
+- **Priority**: High
+- **Acceptance Criteria**: Alerts and news are delivered to users within 10 seconds under normal conditions, verified by test scenarios.
+- **Author**: Sim Boon Xun
+
+#### REQ_I020: Communications Interface – User Notification Control
+- **Version**: 1.0
+- **Description**: The system shall enable users to manage notification receipt (mute, batch, do not disturb) through secure communication between the client app and server.
+- **Priority**: Medium
+- **Acceptance Criteria**: User commands for notification control are securely transmitted and take effect within 5 seconds.
+- **Author**: Sim Boon Xun
+
 
 ## 3.5 Logical Database Requirement
 
@@ -875,6 +939,11 @@ Data Entities and Attributes
 | **Event** | Campus events. | EventID (PK), Title, Description, StartTime, EndTime, Location, IsAccessible, OrganizerContact |
 | **EventImpact** | Impact of events on facilities/routes. | ImpactID (PK), EventID (FK), FacilityID (FK), RouteID (FK, optional), ImpactDescription |
 | **UpdateLog** | Tracks admin updates. | UpdateID (PK), UserID (FK), EntityModified, ModificationDetails, Timestamp |
+|**ClassSchedule**| Stores personalized class timetable for students | ScheduleID (PK), UserID (FK), CourseCode, CourseName, StartTime, EndTime, Venue, Lecturer, LastUpdated |
+| **NewsFeed** | Stores official campus news, announcements, and updates | NewsID (PK), Title, Summary, Content, PublishDate, Category, Author, SourceURL |
+| **UserPreferences** |	Stores user-specific notification and filter settings	| PrefID (PK), UserID (FK), NotificationTypes, UrgencyLevel, DeliveryChannel, BatchSetting, DNDPeriods, SmartSuggestionEnabled, MuteTypes |
+| **NotificationLog** |	Records all notifications sent, delivery status, and user response	| NotificationID (PK), UserID (FK), Type, TimeSent, Batched (bool), Status (delivered/read/muted) |
+| **SuggestionLog** |	Logs personalized suggestions delivered to users	| SuggestionID (PK), UserID (FK), Content, Timestamp, TriggerContext, Status |
 
 _Table 3.5.1 Data Entities and Attributes_
 
@@ -886,11 +955,16 @@ Relationship Between Entities
 - One Building can have multiple Facility records.
 - One Event can impact multiple Facilities or NavigationRoutes.
 - One User (admin) can create multiple UpdateLog entries.
+- One User can have multiple ClassSchedule records
+- One User can have many NotificationLog and SuggestionLog records.
 
 1. **Many-to-One**:
 
 - Multiple Facilities belong to a single Building.
 - Multiple EventImpact records may point to one Event.
+
+1. **One-to-One**:
+- One User has one UserPreferences record
 
 1. **Optional Relationships**:
 
@@ -1014,6 +1088,35 @@ Design constraints specify limitations on the design or implementation of the sy
 - **Rationale**: Ensures data integrity, reliability, and consistency.
 - **Acceptance Criteria**: Database setup and testing confirm compliance with ACID principles.
 
+**3.6.9 REQ_D009: Third-Party API Reliability (for Class Schedule & News Feed)**
+- **Description**: The system shall rely on stable, documented, and officially authorized APIs for class schedule and news feed integration, with clear error-handling for service downtime.
+- **Constraint Type**: Integration
+- **Rationale**: Ensures reliability of timetable/news functions even if external services are temporarily unavailable.
+- **Acceptance Criteria**: The app notifies users if class/news data cannot be fetched, and logs errors for troubleshooting.
+
+**3.6.10 REQ_D010: User Notification Preferences Security**
+- **Description**: All user notification filter preferences and settings must be securely stored, encrypted at rest, and protected against unauthorized access or tampering.
+- **Constraint Type**: Security/Privacy
+- **Rationale**: Prevents data leaks or manipulation of user-specific notification settings.
+- **Acceptance Criteria**: Security audit confirms that preferences are properly encrypted and only accessible to the owning user.
+
+**3.6.11 REQ_D011: Notification Delivery Platform Compliance**
+- **Description**: Any third-party notification delivery service used must comply with PDPA and university privacy policies, ensuring no personal data is processed outside approved jurisdictions.
+- **Constraint Type**: Regulatory/Operational
+- **Rationale**: Maintains data privacy and legal compliance for notification-related integrations.
+- **Acceptance Criteria**: Service provider contracts reviewed and approved by university IT/security office.
+
+**3.6.12 REQ_D012: Real-Time Suggestion Accuracy**
+- **Description**: Smart suggestions and context-aware alerts must be based only on user-authorized data, and the logic must allow users to opt out of such features at any time.
+- **Constraint Type**: User Control/Privacy
+- **Rationale**: Respects user consent and avoids misuse of location, timetable, or behavior data.
+- **Acceptance Criteria**: Usability testing confirms opt-out/disable feature works as intended.
+
+**3.6.13 REQ_D013: Notification Batching Logic**
+- **Description**: The notification batching and fatigue prevention logic must be modular, easily updated, and support configuration by system administrators without redeployment.
+- **Constraint Type**: Maintainability/Implementation
+- **Rationale**: Allows fast tuning of batching rules and notification limits as user needs change.
+- **Acceptance Criteria**: Admins can update batching settings through config files or admin panel; no code change required.
 
 ## 3.7 Software System Attributes
 
@@ -1038,22 +1141,27 @@ Design constraints specify limitations on the design or implementation of the sy
 - **Rationale**: Ensures inclusivity and legal compliance for users with varying abilities.
 - **Acceptance Criteria**: Accessibility audits confirm compliance; user testing by individuals with disabilities verifies feature usability.
 
+### 3.7.4 REQ_SA004: Reliability
+- **Description**: The system shall achieve at least 99.5% uptime during university operating hours, and automatically resume services and data synchronization after connectivity restoration. Minor data failures or outages shall be handled gracefully, with user-friendly error messages and auto-recovery where possible.
+- **Attribute Type**: Reliability
+- **Rationale**: Ensures continuous service for users and minimizes disruptions due to connectivity loss or small system faults.
+- **Acceptance Criteria**: Monthly uptime reports confirm ≥99.5% availability (excluding planned maintenance); system logs show successful auto-recovery from minor outages in >95% of cases.
 
-### 3.7.4 REQ_SA005: Maintainability  
+### 3.7.5 REQ_SA005: Maintainability  
 
 - **Description**: The system shall achieve at least 99.5% uptime, and automatically recover from minor failures or outages within 10 minutes of connectivity restoration.
 - **Attribute Type**: Reliability
 - **Rationale**: Reduces user frustration and loss of service due to system errors or network issues.
 - **Acceptance Criteria**: System logs confirm downtime and recovery periods; monthly uptime and recovery tests meet targets.
 
-### 3.7.5 REQ_SA006: Portability  
+### 3.7.6 REQ_SA006: Portability  
 
 - **Description**: The system codebase shall follow modular architecture and documentation standards, supporting future updates (e.g., new features, third-party integrations) without major rewrites.
 - **Attribute Type**: Maintainability
 - **Rationale**: Facilitates efficient maintenance, faster bug fixes, and easier onboarding of new developers or feature expansion.
 - **Acceptance Criteria**: Code reviews confirm adherence to documentation and modularity standards; updates are implemented without major refactoring.
 
-### 3.7.6 Portability  
+### 3.7.7 Portability  
 
 - **Description**: MMUAccess shall function on modern web browsers (Chrome, Firefox, Safari, Edge) and mobile operating systems (iOS, Android), using responsive design to support various screen sizes.
 - **Attribute Type**: Portability
@@ -1061,27 +1169,56 @@ Design constraints specify limitations on the design or implementation of the sy
 - **Acceptance Criteria**: Usability and compatibility testing confirm correct operation across all supported platforms and devices.
 
 <!-- Group2 Idea -->
-### 3.7.7 REQ_SA007: Scalability
+### 3.7.8 REQ_SA007: Scalability
 
 - **Description**: The system shall support scaling to accommodate increased user load or new feature modules with minimal downtime.
 - **Attribute Type**: Scalability
 - **Rationale**: Ensures the platform remains performant as the university population or requirements grow.
 - **Acceptance Criteria**: System can be upgraded to support double the initial user capacity (e.g., from 500 to 1000 concurrent users) without major architectural changes or more than 1 hour of planned downtime.
 
-### 3.7.8 REQ_SA008: Auditability
+### 3.7.9 REQ_SA008: Auditability
 
 - **Description**: The system shall log all critical administrative actions (e.g., event/facility updates, user role changes) for at least 1 year, and provide authorized users with access to audit logs.
 - **Attribute Type**: Auditability
 - **Rationale**: Supports troubleshooting, security investigations, and compliance.
 - **Acceptance Criteria**: Audit logs are available for inspection and meet data retention policies.
 
-### 3.7.9 REQ_SA009: Performance 
+### 3.7.10 REQ_SA009: Performance 
 
 - **Description**: The system shall respond to user actions within 3 seconds for 95% of requests, as specified in section 3.2.
 - **Attribute Type**: Performance
 - **Rationale**: Ensures good user experience and supports campus operational needs.
 - **Acceptance Criteria**: System logs and tests confirm average and percentile response times.
 
+### REQ_SA010: Class Schedule Accuracy
+- **Description**: The class schedule feature shall maintain 99% accuracy and real-time synchronization with the university timetable system.
+- **Attribute Type**: Accuracy/Reliability
+- **Rationale**: Ensures students receive timely and correct schedule updates.
+- **Acceptance Criteria**: Audit logs confirm that class schedule data matches source system in 99% of random samples.
+
+### REQ_SA011: News Feed Timeliness
+- **Description**: The campus news feed shall display announcements and news within 5 minutes of official release.
+- **Attribute Type**: Timeliness
+- **Rationale**: Ensures users have prompt access to the latest campus information.
+- **Acceptance Criteria**: Testing confirms news items appear in app within 5 minutes of backend update.
+
+### REQ_SA012: Notification Filter Effectiveness
+- **Description**: The system shall deliver only the notifications that match user-set filters, with a false positive/negative rate below 2% in usability tests.
+- **Attribute Type**: Accuracy/Effectiveness
+- **Rationale**: Maximizes relevance of notifications and prevents unwanted interruptions.
+- **Acceptance Criteria**: Controlled tests show ≤2% notifications delivered do not match user filter preferences.
+
+### REQ_SA013: Suggestion Relevance
+- **Description**: Smart suggestions and context-aware alerts must be relevant to user context at least 95% of the time, as measured in pilot user studies.
+- **Attribute Type**: Relevance
+- **Rationale**: Ensures suggestions are genuinely helpful and not ignored as spam.
+- **Acceptance Criteria**: Pilot user surveys rate relevance at 95% or above.
+
+### REQ_SA014: Notification Fatigue Minimization
+- **Description**: The notification fatigue prevention feature shall ensure that no user receives more than 3 non-urgent notifications per hour by default, and users can enable batching/mute options at any time.
+- **Attribute Type**: Usability/User Experience
+- **Rationale**: Prevents annoyance and disengagement due to notification overload.
+- **Acceptance Criteria**: No user receives >3 non-urgent notifications per hour in system test; users can successfully enable/disable batching and mute settings.
 
 ## 3.8 Supporting Information
 
