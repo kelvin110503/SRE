@@ -1237,98 +1237,134 @@ Design constraints specify limitations on the design or implementation of the sy
 
 ---
 
-### 3.8.2 Validation Sessions
+    ### 3.8.2 Validation Sessions
 
-| Session ID | Date & Time       | Technique      | Section Reviewed          | Participant & Role                             | No. of Defect |
-|------------|------------------|---------------|--------------------------|------------------------------------------------|---------------|
-| VS01       | 2025-06-01 20:00 | Inspection    | 3.1-3.3 Functions/Performance | Sim Boon Xun (Leader,Recorder), Hong Chia Qian (Reviewer,Negotiator) | 4             |
-| VS02       | 2025-06-02 21:00 | Walkthrough   | 3.4-3.6 Interface/Constraints | Sim Boon Xun (Leader,Recorder),  Hong Chia Qian (Reviewer,Negotiator)| 3             |
+    | Session ID | Date & Time       | Technique      | Section Reviewed          | Participant & Role                             | No. of Defect |
+    |------------|------------------|---------------|--------------------------|------------------------------------------------|---------------|
+    | VS01       | 2025-06-01 20:00 | Inspection    | 3.1-3.3 Functions/Performance | Sim Boon Xun (Leader,Recorder), Hong Chia Qian (Reviewer,Negotiator) | 4             |
+    | VS02       | 2025-06-02 21:00 | Walkthrough   | 3.4-3.6 Interface/Constraints | Sim Boon Xun (Leader,Recorder),  Hong Chia Qian (Reviewer,Negotiator)| 3             |
+    | VS03       | 2025-06-09 20:00 | Walkthrough   | 3.1-3.2 New Requirement added | Sim Boon Xun (Leader,Recorder),  Hong Chia Qian (Reviewer,Negotiator)| 3             |
+    | VS03       | 2025-06-12 20:00 | Walkthrough   | 3.2-3.7 add some point depends on New Requirement added | Sim Boon Xun (Leader,Recorder),  Hong Chia Qian (Reviewer,Negotiator)| 6             |
 
----
+    ---
 
-### 3.8.3 Defect Summary
+    ### 3.8.3 Defect Summary
 
-#### A. Content Defect
+    #### A. Content Defect
 
-| Req ID  | Validation and Defect Description                        | Detected By      | Comment/Suggested Fix                           | Session ID | Severity (1–5) |
-|---------|----------------------------------------------------------|------------------|-------------------------------------------------|------------|---------------|
-| REQ_F007| Missing user obstacle reporting feature.                 | Sim Boon Xun   | Add new requirement and use case for feedback.   | VS01       | 5             |
+    | Req ID  | Validation and Defect Description                        | Detected By      | Comment/Suggested Fix                           | Session ID | Severity (1–5) |
+    |---------|----------------------------------------------------------|------------------|-------------------------------------------------|------------|---------------|
+    | REQ_F007| Missing user obstacle reporting feature.                 | Sim Boon Xun   | Add new requirement and use case for feedback.   | VS01       | 5             |
+| --------- | ----------------------------------------------------------- | ------------ | ---------------------------------------------------------------------- | ---------- | -------------- |
+| REQ\_F007 | Missing class schedule integration for personalized routes. | Sim Boon Xun | Add new requirement for class schedule integration.                    | VS03       | 5              |
+| REQ\_F008 | Campus news feed integration missing from main UI.          | Sim Boon Xun | Add campus news feed integration requirement.                          | VS03       | 4              |
+| REQ\_F009 | Users cannot customize notification preferences/filters.    | Sim Boon Xun | Add customizable notification filter requirement.                      | VS03      | 4              |
+| REQ\_F010 | Lack of context-aware smart suggestions/reminders.          | Sim Boon Xun | Add smart suggestions/context-aware alerts requirement.                | VS03       | 4              |
+| REQ\_F011 | No notification fatigue prevention controls for users.      | Sim Boon Xun | Add notification fatigue prevention (batching, mute, DND) requirement. | VS03       | 4              |
 
-#### B. Documentation Defect
 
-| Page No. | Validation and Defect Description                     | Detected By    | Comment/Suggested Fix              | Session ID | Severity (1–5) |
-|----------|------------------------------------------------------|----------------|------------------------------------|------------|---------------|
-| 12       | Use case diagram not inserted; caption missing.       | Sim Boon Xun   | Add diagram and proper caption.    | VS02       | 3             |
+    #### B. Documentation Defect
 
-#### C. Agreement Defect
+    | Page No. | Validation and Defect Description                     | Detected By    | Comment/Suggested Fix              | Session ID | Severity (1–5) |
+    |----------|------------------------------------------------------|----------------|------------------------------------|------------|---------------|
+    | 12       | Use case diagram not inserted; caption missing.       | Sim Boon Xun   | Add diagram and proper caption.    | VS02       | 3             |
+| -------- | ---------------------------------------------------- | ------------ | -------------------------------- | ---------- | -------------- |
+| 13-18    | Use case/state diagrams for new requirements missing | Sim Boon Xun | Add diagrams and proper captions | VS03       | 3              |
 
-| Req ID  | Validation Description/Stakeholder Concern                  | Mismatch             | Detected By     | Session ID | Severity (1–5) |
-|---------|-------------------------------------------------------------|----------------------|-----------------|------------|---------------|
-| REQ_F004| Event filtering didn’t match student needs for category.    | Filtering options    | Sim Boon Xun  | VS01       | 4             |
 
----
+    #### C. Agreement Defect
 
-### 3.8.4 Conflict Analysis
+    | Req ID  | Validation Description/Stakeholder Concern                  | Mismatch             | Detected By     | Session ID | Severity (1–5) |
+    |---------|-------------------------------------------------------------|----------------------|-----------------|------------|---------------|
+    | REQ_F004| Event filtering didn’t match student needs for category.    | Filtering options    | Sim Boon Xun  | VS01       | 4             |
+| --------- | -------------------------------------------------------------- | --------------------- | ------------ | ---------- | -------------- |
+| REQ\_F009 | Users want finer control over notification types and urgency   | Lacks customization   | Sim Boon Xun | VS03       | 4              |
+| REQ\_F011 | Users dissatisfied with notification overload; need mute/batch | No fatigue prevention | Sim Boon Xun | VS03       | 4              |
 
-| Conflict ID | Conflict Description                  | Conflict Analysis                          | Stakeholders Involved          | Session ID |
-|-------------|--------------------------------------|--------------------------------------------|-------------------------------|------------|
-| C01         | Should system support obstacle reports?| Some argued it's out of scope, but user needs confirmed importance. | Team, simulated stakeholder   | VS01       |
 
----
+    ---
 
-### 3.8.5 Conflict Resolution
+    ### 3.8.4 Conflict Analysis
 
-| Conflict ID | Conflict Resolution Strategy    | Resolved (Y/N) | Outcome                       | Justification                          |
-|-------------|-------------------------------|---------------|-------------------------------|----------------------------------------|
-| C01         | Team discussion, stakeholder feedback | Y             | Added obstacle reporting      | Strong stakeholder demand, high impact |
+    | Conflict ID | Conflict Description                  | Conflict Analysis                          | Stakeholders Involved          | Session ID |
+    |-------------|--------------------------------------|--------------------------------------------|-------------------------------|------------|
+    | C01         | Should system support obstacle reports?| Some argued it's out of scope, but user needs confirmed importance. | Team, simulated stakeholder   | VS01       |
+| ----------- | -------------------------------------------- | ---------------------------------------------------------- | --------------------- | ---------- |
+| C02         | Should news feed be prioritized over events? | Team debated homepage layout; consensus for both feeds.    | Team, users           | VS03       |
+| C03         | How granular should notification filters be? | Users prefer category/urgency/channel; devs prefer simple. | Team, users, devs     | VS03       |
 
----
 
-### 3.8.6 Change Log
+    ---
 
-| Change ID | Req ID   | Summary of Change                        | Proposed By      | Date       | Session ID |
-|-----------|----------|------------------------------------------|------------------|------------|------------|
-| CH01      | REQ_F007 | Added obstacle reporting requirement     | Sim Boon Xun     | 2025-06-01 | VS01       |
-| CH02      | REQ_F004 | Enhanced event filtering options         | Sim Boon Xun     | 2025-06-01 | VS01       |
-| CH03      | N/A      | Added missing use case diagram/caption   | Sim Boon Xun     | 2025-06-02 | VS02       |
+    ### 3.8.5 Conflict Resolution
 
----
+    | Conflict ID | Conflict Resolution Strategy    | Resolved (Y/N) | Outcome                       | Justification                          |
+    |-------------|-------------------------------|---------------|-------------------------------|----------------------------------------|
+    | C01         | Team discussion, stakeholder feedback | Y             | Added obstacle reporting      | Strong stakeholder demand, high impact |
+| ----------- | -------------------------------------- | -------------- | ---------------------------------- | ------------------------------ |
+| C02         | UI design mockup, stakeholder feedback | Y              | Homepage shows news + events       | User feedback, usability tests |
+| C03         | Iterative prototyping and survey       | Y              | Added flexible filters in settings | Strong user demand             |
 
-### 3.8.7 Requirements Traceability Matrix
 
-| Requirement ID | Use Case ID | System Feature             | Stakeholder       | Notes                |
-|----------------|-------------|----------------------------|-------------------|----------------------|
-| REQ_F001       | UC001       | User Registration/Login    | User              | Original SRS         |
-| REQ_F002       | UC002       | View Campus Events         | User              | Original SRS         |
-| REQ_F003       | UC002       | Display Event Details      | User              | Original SRS         |
-| REQ_F004       | UC002       | Event Filtering            | User              | Enhanced             |
-| REQ_F005       | UC003       | Accessible Route Guidance  | User              | Original SRS         |
-| REQ_F006       | UC002       | No Events Message          | User              | Original SRS         |
-| REQ_F007       | UC007       | Obstacle Reporting         | User, Admin       | Added after review   |
+    ---
 
----
+    ### 3.8.6 Change Log
 
-### 3.8.8 Role in Requirements Validation, Negotiation & Management
+    | Change ID | Req ID   | Summary of Change                        | Proposed By      | Date       | Session ID |
+    |-----------|----------|------------------------------------------|------------------|------------|------------|
+    | CH01      | REQ_F007 | Added obstacle reporting requirement     | Sim Boon Xun     | 2025-06-01 | VS01       |
+    | CH02      | REQ_F004 | Enhanced event filtering options         | Sim Boon Xun     | 2025-06-01 | VS01       |
+    | CH03      | N/A      | Added missing use case diagram/caption   | Sim Boon Xun     | 2025-06-02 | VS02       |
+| --------- | --------- | -------------------------------------------- | ------------ | ---------- | ---------- |
+| CH04      | REQ\_F007 | Added class schedule integration             | Sim Boon Xun | 2025-06-09 | VS03       |
+| CH05      | REQ\_F008 | Added campus news feed integration           | Sim Boon Xun | 2025-06-09 | VS03       |
+| CH06      | REQ\_F009 | Added customizable notification filters      | Sim Boon Xun | 2025-06-09 | VS03       |
+| CH07      | REQ\_F010 | Added smart suggestions/context-aware alerts | Sim Boon Xun | 2025-06-09 | VS03       |
+| CH08      | REQ\_F011 | Added notification fatigue prevention        | Sim Boon Xun | 2025-06-09 | VS03       |
 
-| Student Name    | Primary Responsibility | No. of Sessions Participated |
-|-----------------|-----------------------|------------------------------|
-| Sim Boon Xun    | Leader, Facilitator   | 2                            |
-| Hong Chia Qian  | Reviewer,Negotiator   | 2                            |
-| Wang Kuang Wei  | Recorder, Reviewer    | 2                            |
-| Chia Kok Ang    | Negotiator, Reviewer  | 2                            |
 
----
+    ---
 
-### 3.8.9 Version Control & Configuration Summary
+    ### 3.8.7 Requirements Traceability Matrix
 
-| Student Name    | Commits | Pull Requests | Change Log Entries |
-|-----------------|---------|---------------|-------------------|
-| Sim Boon Xun    | 11      | 0             | 11                 |
-| Hong Chia Qian  | 0       | 0             | 0                 |
-| Wang Kuang Wei  | 0       | 0             | 0                 |
-| Chia Kok Ang    | 0       | 0             | 0                 |
+    | Requirement ID | Requirement Description                | Linked Goal(s)        | Feature(s)                      | Use Case(s) | Traceability Score |
+| -------------- | -------------------------------------- | --------------------- | ------------------------------- | ----------- | ------------------ |
+| REQ\_F001      | User Registration/Login                | Account Access        | User Auth                       | UC001       | 100                |
+| REQ\_F002      | View Campus Events                     | Event Awareness       | Event List                      | UC002       | 100                |
+| REQ\_F003      | Display Event Details                  | Event Awareness       | Event Details                   | UC002       | 100                |
+| REQ\_F004      | Event Filtering                        | Event Personalization | Filter Events                   | UC002       | 90                 |
+| REQ\_F005      | Accessible Route Guidance              | Accessibility         | Route Finder                    | UC003       | 100                |
+| REQ\_F006      | No Events Message                      | User Experience       | Event List                      | UC002       | 100                |
+| REQ\_F007      | Class Schedule Integration             | Schedule Convenience  | Class Schedule                  | UC007       | 100                |
+| REQ\_F008      | Campus News Feed Integration           | Information Access    | News Feed                       | UC008       | 100                |
+| REQ\_F009      | Customizable Notification Filters      | User Personalization  | Notification Filter             | UC009       | 95                 |
+| REQ\_F010      | Smart Suggestions/Context-Aware Alerts | Proactive Assistance  | Smart Suggestions               | UC010       | 95                 |
+| REQ\_F011      | Notification Fatigue Prevention        | User Experience       | Notification Fatigue Prevention | UC011       | 95                 |
 
----
+
+    ---
+
+    ### 3.8.8 Role in Requirements Validation, Negotiation & Management
+
+    | Student Name    | Primary Responsibility | No. of Sessions Participated |
+    |-----------------|-----------------------|------------------------------|
+    | Sim Boon Xun    | Leader, Facilitator   | 2           4                           |
+    | Hong Chia Qian  | Reviewer,Negotiator   | 4                           |
+    | Wang Kuang Wei  | Recorder, Reviewer    | 0                            |
+    | Chia Kok Ang    | Negotiator, Reviewer  | 0                            |
+
+    ---
+
+    ### 3.8.9 Version Control & Configuration Summary
+
+    | Student Name    | Commits | Pull Requests | Change Log Entries |
+    |-----------------|---------|---------------|-------------------|
+    | Sim Boon Xun    | 11      | 0             | 11                 |
+    | Hong Chia Qian  | 0       | 0             | 0                 |
+    | Wang Kuang Wei  | 0       | 0             | 0                 |
+    | Chia Kok Ang    | 0       | 0             | 0                 |
+
+    ---
 
 
 # 4.0 Verification
