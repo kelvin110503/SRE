@@ -4,6 +4,18 @@ Date:
 Change Description: 
 Reason: 
 
+
+Author: Hong Chia Qian <hongchiaqian@gmail.com>
+Date:   Sun Jun 16 00:01:00 2025 +0800
+Change Description: Created new ERD diagram with updated role for Admin entity in section 3.5
+Reason: To reflect the inclusion of the Admin role in the system's data model.
+
+
+Author: Hong Chia Qian <hongchiaqian@gmail.com>
+Date:   Sun Jun 16 00:00:00 2025 +0800
+Change Description: Edited in 3.5 Logical Database Requirement Data Entities and Attributes table to add Admin entity. Edited the Relationship Between Entities with a new role which is admin. 
+Reason: To include the Admin entity for system management with attributes AdminID (PK), Name, Email (Unique), PasswordHash, Role.
+
 Author: Sim Boon Xun <wen_xun2002@hotmail.com>
 Date:    Thu Jun 12 23:40:00 2025 +0800 
 Change Description: Update 3.4 - 3.7  update SRS.md to google docs
@@ -11,8 +23,8 @@ Reason: Update 3.4 - 3.7 add some new point for the new 5 requirement and also u
 
 Author: Hong Chia Qian <hongchiaqian@gmail.com>
 Date:   Tue Jun 10 15:30:00 2025 +0800
-Change Description: Updated SRS.md with new functional requirements and fixed formatting issues.
-Reason: To ensure all requirements are up to date and documentation is clear for the next review.
+Change Description: Edited 1.1 Purpose and 1.2 Scope for clarity
+Reason: To improve clarity and ensure all requirements are up to date for the next review.
 
 Author: Sim Boon Xun <wen_xun2002@hotmail.com>
 Date:    Sun Jun 8 22:00:00 2025 +0800

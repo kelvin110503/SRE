@@ -69,15 +69,32 @@ Table of Contents
 
 ## 1.1 Purpose
 
-The purpose of this document is to specify the software requirements for MMUAccess, a campus accessibility navigation system. The document outlines the functionality, constraints, and design requirements of the platform, which aims to assist students, staff, and visitors in navigating the university campus — especially those with accessibility needs. This document is intended for software developers, system designers, project stakeholders, and testers involved in the development and deployment of the system.
+The purpose of this document is to specify the software requirements for MMUAccess, a comprehensive campus accessibility and information system. This system is designed to seamlessly assist all users (students, staff, and visitors) in navigating the Multimedia University campus, with a particular emphasis on providing inclusive experiences for users with diverse accessibility needs. The platform will leverage detailed building and facility information to provide real-time, accessible route guidance, account for event-related impacts on facilities and routes, and present a consolidated view of campus events and official news updates. Furthermore, MMUAccess aims to empower users through personalized class schedules, customizable preferences for notifications and suggestions, and secure device session management. The system also incorporates robust logging of administrative updates to maintain data integrity. Ultimately, MMUAccess seeks to significantly enhance the university's digital infrastructure by fostering inclusive campus navigation and ensuring all users have access to timely, relevant, and personalized campus information.
+
 
 ## 1.2 Scope
 
 MMUAccess shall facilitate mainly the following operations
 
-1. Navigation across campus with accessible route
-2. Real-time updates on campus events
-3. Integration with MMU’s event calendar to guide users to accessible event locations
+1. User Management and Personalization:
+- Secure user authentication and session management for students, staff, and visitors, tracking device usage.
+- Allow users to define and save detailed accessibility needs within their profiles.
+- Provide comprehensive user preferences for notification types, urgency levels, delivery channels, batch settings, do-not-disturb periods, smart suggestions, and mute options.
+2. Accessible Campus Navigation:
+- Provide real-time, accessible route guidance based on user accessibility needs, utilizing comprehensive building and facility data.
+- Incorporate real-time route adjustments based on various factors, including temporary event-related impacts on facilities or routes.
+3. Event and Campus Information Dissemination:
+- Display live updates and details on campus events.
+- Integrate with MMU’s official event calendar to guide users to accessible locations for listed events.
+- Provide official campus news, announcements, and updates through a dedicated news feed.
+4. Personalized Timetables:
+- Store and display personalized class schedules for students, including course details, venues, and lecturers.
+5. Notifications and Suggestions:
+- Log and manage all sent notifications, including delivery status and user responses, adhering to user preferences.
+- Deliver personalized suggestions to users based on context and preferences, logging their content and status.
+6. System Administration and Auditing:
+- Maintain a detailed log of all administrative updates to core entities and data, linked to the responsible user.
+
 
 ## 1.3 Product Overview
 
@@ -944,6 +961,7 @@ Data Entities and Attributes
 | **UserPreferences** |	Stores user-specific notification and filter settings	| PrefID (PK), UserID (FK), NotificationTypes, UrgencyLevel, DeliveryChannel, BatchSetting, DNDPeriods, SmartSuggestionEnabled, MuteTypes |
 | **NotificationLog** |	Records all notifications sent, delivery status, and user response	| NotificationID (PK), UserID (FK), Type, TimeSent, Batched (bool), Status (delivered/read/muted) |
 | **SuggestionLog** |	Logs personalized suggestions delivered to users	| SuggestionID (PK), UserID (FK), Content, Timestamp, TriggerContext, Status |
+| **Admin** |	Represents administrators managing the system	| AdminID (PK), Name, Email (Unique), PasswordHash, Role |
 
 _Table 3.5.1 Data Entities and Attributes_
 
@@ -957,11 +975,14 @@ Relationship Between Entities
 - One User (admin) can create multiple UpdateLog entries.
 - One User can have multiple ClassSchedule records
 - One User can have many NotificationLog and SuggestionLog records.
+- One Admin can manage multiple UpdateLog entries.
 
 1. **Many-to-One**:
 
 - Multiple Facilities belong to a single Building.
 - Multiple EventImpact records may point to one Event.
+- Multiple UpdateLog records may point to one Admin.
+
 
 1. **One-to-One**:
 - One User has one UserPreferences record
