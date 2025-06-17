@@ -6,10 +6,26 @@ Reason:
 
 
 Author: Hong Chia Qian <hongchiaqian@gmail.com>
+Date:   Tue Jun 17 22:12:09 2025 +0800
+Change Description: Comprehensive SRS refinement across multiple sections. Updates include:
+    - 1.4 Definitions: Rearranged in alphabetical order.
+    - 2.0 References: Added new external and internal document references.
+    - 3.1 Use Cases: Created new Use Case Diagram with updated use cases and added diagram description.
+    - 3.4 Interface Requirements: Redefined and clarified user interface specifications.
+    - 3.5 ERD Overview: Updated ERD definition, core entities, and key relationships for accuracy.
+    - 3.6 Design Constraints: Updated with detailed software, hardware, regulatory, and development constraints.
+    - 3.7 Software System Attributes: Refined existing attributes (e.g., Availability, Security, Accessibility, Reliability) and added/corrected Maintainability (3.7.5).
+    - 4.1 Requirement Traceability: Provided new definition.
+    - 4.2 Verification Techniques: Added new sections for Security Testing and Performance Testing.
+    - 4.3 Stakeholder and Verification Summary: Added detailed definition.
+    - 5.1 Assumptions and Dependencies: Updated with new definitions and explanations.
+    - 5.2 Acronyms and Abbreviations: Rearranged for alphabetical order and refined content (requires final check for scope).
+Reason: To enhance the precision, consistency, and overall quality of the Software Requirements Specification, ensuring all requirements are clearly defined, well-structured, and verifiable.
+
+Author: Hong Chia Qian <hongchiaqian@gmail.com>
 Date:   Sun Jun 16 00:01:00 2025 +0800
 Change Description: Created new ERD diagram with updated role for Admin entity in section 3.5
 Reason: To reflect the inclusion of the Admin role in the system's data model.
-
 
 Author: Hong Chia Qian <hongchiaqian@gmail.com>
 Date:   Sun Jun 16 00:00:00 2025 +0800
