@@ -5,6 +5,17 @@ Change Description:
 Reason: 
 
 
+Author: Sim Boon Xun <wen_xun2002@hotmail.com>
+Date:    Tue Jun 17 23:30:00 2025 +0800 
+Change Description: Applied consistent numbering to all document sections and ensured proper use of heading levels throughout the document (e.g., H1, H2, H3). All titles and subsections are now clearly and structurally organized.
+Reason: To enhance readability, navigability, and professional formatting of the SRS document. This change ensures compliance with documentation standards and improves clarity for reviewers and contributors. 
+
+
+Author: Sim Boon Xun <wen_xun2002@hotmail.com>
+Date:    Tue Jun 17 23:30:00 2025 +0800 
+Change Description: add new section Stakeholder and Verification Summary 
+Reason: 3 stakeholder (Students,Staff (Admin),Project Developer), and also add some subsection Verification test case for each stakeholder 
+
 Author: Hong Chia Qian <hongchiaqian@gmail.com>
 Date:   Tue Jun 17 22:12:09 2025 +0800
 Change Description: Comprehensive SRS refinement across multiple sections. Updates include:
