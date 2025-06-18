@@ -3,7 +3,30 @@ Author:
 Date:   
 Change Description: 
 Reason: 
+Author: Hong Chia Qian <hongchiaqian@gmail.com>
+Date:   Sun Jun 17 24:52:10 2025 +0800
+Change Description: 4.3 Stakeholder and Verification Summary: Added detailed definition., 5.1 Assumptions and Dependencies: Updated with new definitions and explanations., 5.2 Acronyms and Abbreviations: Rearranged for alphabetical order and refined content.
+Reason: The skateholder isnt defined throughly. Assumption and dependencies definition and explaination are unclear. Acronyms and abbreviation did not arranged in alphabetised format. 
 
+Author: Hong Chia Qian <hongchiaqian@gmail.com>
+Date:   Sun Jun 17 17:20:00 2025 +0800
+Change Description: 3.7 Software System Attributes: Refined existing attributes and added/corrected Maintainability (3.7.5) ,4.1 Requirement Traceability: Provided new definition,4.2 Verification Techniques: Added new sections for Security Testing and Performance Testing.
+Reason: The software system attribute isnt refine with its existing attribute. The requiremnent tracability isnt defined properly. There is no security testing and performance testing section for verification technique.
+
+Author: Hong Chia Qian <hongchiaqian@gmail.com>
+Date:   Sun Jun 17 13:39:00 2025 +0800
+Change Description: 3.4 Interface Requirements: Redefined and clarified user interface specifications, 3.5 ERD Overview: Updated ERD definition, core entities, and key relationships for accuracy, 3.6 Design Constraints: Updated with detailed software, hardware, regulatory, and development constraints.
+Reason: The interface requirement isnt defined properly and unclarified with the user interface specification. The ERD overview definition , core entities key relationship for accuracy. The design constrain is updated. 
+
+Author: Hong Chia Qian <hongchiaqian@gmail.com>
+Date:   Sun Jun 17 07:02:00 2025 +0800
+Change Description: 1.4 Definitions: Rearranged in alphabetical order,2.0 References: Added new external and internal document references and 3.1 Use Cases: Created new Use Case Diagram with updated use cases and added diagram description.
+Reason: The definition did not arrange according to the alphabetised order.The references isn't fully updated with the document.The use case diagram isnt fully alligned with the new updated use cases. 
+
+Author: Hong Chia Qian <hongchiaqian@gmail.com>
+Date:   Sun Jun 17 00:02:15 2025 +0800
+Change Description: 1.4 Definitions: Rearranged in alphabetical order,2.0 References: Added new external and internal document references and 3.1 Use Cases: Created new Use Case Diagram with updated use cases and added diagram description.
+Reason: The definition did not arrange according to the alphabetised order.The references isn't fully updated with the document.The use case diagram isnt fully alligned with the new updated use cases. 
 
 Author: Sim Boon Xun <wen_xun2002@hotmail.com>
 Date:    Tue Jun 17 23:30:00 2025 +0800 
