@@ -33,28 +33,10 @@ Date:    Tue Jun 17 23:30:00 2025 +0800
 Change Description: Applied consistent numbering to all document sections and ensured proper use of heading levels throughout the document (e.g., H1, H2, H3). All titles and subsections are now clearly and structurally organized.
 Reason: To enhance readability, navigability, and professional formatting of the SRS document. This change ensures compliance with documentation standards and improves clarity for reviewers and contributors. 
 
-
 Author: Sim Boon Xun <wen_xun2002@hotmail.com>
 Date:    Tue Jun 17 23:30:00 2025 +0800 
 Change Description: add new section Stakeholder and Verification Summary 
 Reason: 3 stakeholder (Students,Staff (Admin),Project Developer), and also add some subsection Verification test case for each stakeholder 
-
-Author: Hong Chia Qian <hongchiaqian@gmail.com>
-Date:   Tue Jun 17 22:12:09 2025 +0800
-Change Description: Comprehensive SRS refinement across multiple sections. Updates include:
-    - 1.4 Definitions: Rearranged in alphabetical order.
-    - 2.0 References: Added new external and internal document references.
-    - 3.1 Use Cases: Created new Use Case Diagram with updated use cases and added diagram description.
-    - 3.4 Interface Requirements: Redefined and clarified user interface specifications.
-    - 3.5 ERD Overview: Updated ERD definition, core entities, and key relationships for accuracy.
-    - 3.6 Design Constraints: Updated with detailed software, hardware, regulatory, and development constraints.
-    - 3.7 Software System Attributes: Refined existing attributes (e.g., Availability, Security, Accessibility, Reliability) and added/corrected Maintainability (3.7.5).
-    - 4.1 Requirement Traceability: Provided new definition.
-    - 4.2 Verification Techniques: Added new sections for Security Testing and Performance Testing.
-    - 4.3 Stakeholder and Verification Summary: Added detailed definition.
-    - 5.1 Assumptions and Dependencies: Updated with new definitions and explanations.
-    - 5.2 Acronyms and Abbreviations: Rearranged for alphabetical order and refined content (requires final check for scope).
-Reason: To enhance the precision, consistency, and overall quality of the Software Requirements Specification, ensuring all requirements are clearly defined, well-structured, and verifiable.
 
 Author: Hong Chia Qian <hongchiaqian@gmail.com>
 Date:   Sun Jun 16 00:01:00 2025 +0800
