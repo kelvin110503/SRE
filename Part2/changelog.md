@@ -3,6 +3,11 @@ Author:
 Date:   
 Change Description: 
 Reason: 
+Author: Wang Kuang Wei <kuangwei04@gmail.com>
+Date:   Thu Jun 19 11:30:00 2025 +0800
+Change Description: Added content defect for REQ_F005 in 3.8.3: Route guidance lacks accessibility tags.
+Reason: Identified missing WCAG compliance in route output during validation.
+
 Author: Hong Chia Qian <hongchiaqian@gmail.com>
 Date:   Sun Jun 17 24:52:10 2025 +0800
 Change Description: 4.3 Stakeholder and Verification Summary: Added detailed definition., 5.1 Assumptions and Dependencies: Updated with new definitions and explanations., 5.2 Acronyms and Abbreviations: Rearranged for alphabetical order and refined content.
