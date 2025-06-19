@@ -1282,6 +1282,7 @@ Design constraints specify limitations on the design or implementation of the sy
 | REQ\_F009 | Users cannot customize notification preferences/filters.    | Sim Boon Xun | Add customizable notification filter requirement.                      | VS03      | 4              |
 | REQ\_F010 | Lack of context-aware smart suggestions/reminders.          | Sim Boon Xun | Add smart suggestions/context-aware alerts requirement.                | VS03       | 4              |
 | REQ\_F011 | No notification fatigue prevention controls for users.      | Sim Boon Xun | Add notification fatigue prevention (batching, mute, DND) requirement. | VS03       | 4              |
+| REQ\_F005 | Route guidance lack accessibility tags.                     | Wang Kuang Wei | Add WCAG tags to route output.                                      | VS04       | 4              |
 
 
     #### B. Documentation Defect
@@ -1301,7 +1302,6 @@ Design constraints specify limitations on the design or implementation of the sy
 | --------- | -------------------------------------------------------------- | --------------------- | ------------ | ---------- | -------------- |
 | REQ\_F009 | Users want finer control over notification types and urgency   | Lacks customization   | Sim Boon Xun | VS03       | 4              |
 | REQ\_F011 | Users dissatisfied with notification overload; need mute/batch | No fatigue prevention | Sim Boon Xun | VS03       | 4              |
-
 
     ---
 
@@ -1371,7 +1371,7 @@ Design constraints specify limitations on the design or implementation of the sy
     |-----------------|-----------------------|------------------------------|
     | Sim Boon Xun    | Leader, Facilitator   | 2           4                           |
     | Hong Chia Qian  | Reviewer,Negotiator   | 4                           |
-    | Wang Kuang Wei  | Recorder, Reviewer    | 0                            |
+    | Wang Kuang Wei  | Recorder, Reviewer    | 1                            |
     | Chia Kok Ang    | Negotiator, Reviewer  | 0                            |
 
     ---
