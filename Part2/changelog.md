@@ -9,7 +9,7 @@ Change Description: Added content defect for REQ_F005 in 3.8.3: Route guidance l
 Reason: Identified missing WCAG compliance in route output during validation.
 
 Author: Hong Chia Qian <hongchiaqian@gmail.com>
-Date:   Sun Jun 17 24:52:10 2025 +0800
+Date:   Sun Jun 18 00:52:10 2025 +0800
 Change Description: 4.3 Stakeholder and Verification Summary: Added detailed definition., 5.1 Assumptions and Dependencies: Updated with new definitions and explanations., 5.2 Acronyms and Abbreviations: Rearranged for alphabetical order and refined content.
 Reason: The skateholder isnt defined throughly. Assumption and dependencies definition and explaination are unclear. Acronyms and abbreviation did not arranged in alphabetised format. 
 
