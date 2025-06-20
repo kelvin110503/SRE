@@ -3,6 +3,12 @@ Author:
 Date:   
 Change Description: 
 Reason: 
+
+Author: Chia Kok Ang <kachia031105@gmail.com>
+Date:   Fri Jun 20 17:48:03 2025 +0800
+Change Description: Added REQ_F012 (Report Accessibility Issue) to 3.1 Functions in SRS.md.
+Reason: To enable users to report real-world accessibility problems, supporting inclusivity and real-time campus navigation.
+
 Author: Wang Kuang Wei <kuangwei04@gmail.com>
 Date:   Thu Jun 19 11:30:00 2025 +0800
 Change Description: Added content defect for REQ_F005 in 3.8.3: Route guidance lacks accessibility tags.

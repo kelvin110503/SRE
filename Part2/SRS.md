@@ -266,6 +266,20 @@ AI-generated content may be incorrect.](data:image/png;base64,iVBORw0KGgoAAAANSU
 
 ---
 
+
+#### REQ_F012: Report Accessibility Issue
+- **Version**: 1.0
+- **Description**: The system shall allow users to report accessibility issues (e.g., blocked paths, malfunctioning elevators, construction) directly from the app interface.
+- **Priority**: High
+- **Acceptance Criteria**:
+  - Users can submit a report with location, description, and optional photo.
+  - Admins are notified of new reports and can update the status (e.g., acknowledged, resolved).
+  - Users receive feedback when their reported issue is addressed.
+- **Author**: Chia Kok Ang
+
+---
+
+
 1<sup>st</sup> use case
 
 | **Use Case ID** | UC001 |     | **Version** | 1.0 |
